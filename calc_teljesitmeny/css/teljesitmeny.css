@@ -1,0 +1,50 @@
+.center
+{
+	padding : 15px; 
+	padding-top : 0;
+}
+
+.center h4
+{
+	font-weight : normal;
+	margin-top : 10px;
+	margin-bottom : 0;
+}
+
+.or
+{
+	width : 45px;
+}
+
+.date
+{
+	width : 70px;
+}
+
+#sum
+{
+
+	text-align : center;
+	padding : 15px;
+	padding-top : 10px; 
+	padding-bottom : 5px;
+}
+
+#sum h4
+{
+	font-weight : normal;
+	text-align : center;
+	margin : 0;
+}
+
+#error
+{
+	color: red;
+	text-align : center;
+}
+
+#error h4
+{
+	font-weight : normal;
+	margin : 0px;
+}

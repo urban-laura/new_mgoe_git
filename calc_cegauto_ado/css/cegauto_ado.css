@@ -1,0 +1,38 @@
+#sum
+{
+	padding : 15px;
+	padding-top : 10px; 
+	padding-bottom : 0px;
+}
+
+.center
+{
+	padding : 15px; 
+	padding-top : 0;
+}
+
+.center h4
+{
+	font-weight : normal;
+	margin-top : 10px;
+	margin-bottom : 0;
+}
+
+.select
+{
+	width : 171px;
+}
+
+.title2
+{
+	width : 150px; 
+	padding-bottom : 10px;
+	color: #01224a;
+}
+
+.value
+{
+	padding-bottom : 10px;
+	text-align : right;
+	color: #01224a;
+}

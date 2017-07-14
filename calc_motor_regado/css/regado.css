@@ -1,0 +1,74 @@
+#motor
+{
+	padding : 15px; 
+	padding-top : 0;
+}
+
+#motor h3
+{
+	font-size : 16px;
+	margin : 0;
+	margin-top : 15px;
+}
+
+#motor h4
+{
+	font-weight : normal;
+	width : 150px;
+	margin-top : 10px;
+	margin-bottom : 0;
+}
+
+.year_div
+{
+	float : left;
+}
+
+.month_div
+{
+	margin-left : 168px;
+}
+
+.date
+{
+	width : 70px;
+}
+
+
+.barrel_m
+{
+	width : 168px;
+}
+
+#sum
+{
+	
+	padding-top : 10px; 
+	text-align : center;
+}
+
+#sum h4
+{
+	font-weight : normal;
+	font-size : 16px;
+	margin : 10px;
+}
+
+#sum h5
+{
+	font-weight : normal;
+	font-size : 14px;
+	margin : 0;
+}
+
+#error
+{
+	color: red;
+	text-align : center;
+}
+
+#error h3
+{
+	font-weight : normal;
+	margin-top : 5px;
+}

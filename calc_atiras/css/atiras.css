@@ -1,0 +1,105 @@
+#atiras
+{
+	padding : 15px; 
+	padding-top : 0;
+}
+
+#atiras h4
+{
+	font-weight : normal;
+	margin-top : 10px;
+	margin-bottom : 0px;
+}
+
+
+#type
+{
+	margin-top : 15px;
+	width : 390px;
+	height : 30px;
+	margin-bottom : 5px;
+	font-size : 16px;
+	text-align : center;
+}
+
+#sum
+{
+	padding : 15px;
+	padding-top : 10px; 
+	padding-bottom : 0px;
+}
+
+#sum h3
+{
+	margin : 0;
+	font-size : 19px;
+	font-weight : normal;
+	margin-bottom : 15px;
+}
+
+#sum h4
+{
+	font-weight : normal;
+	margin-top : 0px;
+	margin-bottom : 10px;
+	font-size : 16px;
+	text-align : right;
+}
+
+
+.error
+{
+	color: red;
+	text-align : center;
+}
+
+.error h3
+{
+	font-weight : normal;
+	margin : 0px;
+	font-size : 16px;
+}
+
+.date
+{
+	width : 70px;
+}
+
+.padding-top
+{
+	padding-top : 15px;
+}
+
+.or
+{
+	width : 45px;
+}
+
+.barrel
+{
+	width : 110px;
+}
+
+.kategoria
+{
+	width : 280px;
+}
+
+.title2
+{
+	width : 220px; 
+	padding-bottom : 10px;
+	color: #01224a;
+}
+
+.value
+{
+	padding-bottom : 10px;
+	text-align : right;
+	color: #01224a;
+}
+
+.sum
+{
+	font-weight : bold;
+}

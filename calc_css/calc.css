@@ -1,0 +1,46 @@
+.frame
+{
+	width : 420px;
+	font-family : Verdana;
+	background-color : #EEEEEE;
+	border-radius : 5px 5px 5px 5px;
+	color: #01224a;
+	padding-bottom : 5px;
+}
+
+.calc-form
+{
+	margin : 0;
+}
+
+.title
+{
+	background-color : #005398;
+	height : 50px; 
+	border-radius : 5px 5px 0px 0px; 
+	text-align : center;	
+}
+
+.title h1
+{
+	font-size : 20px;
+	color : white;
+	margin : 0;
+	padding-top : 12px;
+}
+
+.invisible
+{
+	display : none;
+}
+
+.form-submit
+{
+	width : 100px;
+	height : 30px;
+}
+
+.submit
+{
+	text-align : center;
+}

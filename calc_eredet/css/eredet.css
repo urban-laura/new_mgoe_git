@@ -1,0 +1,65 @@
+.frame
+{
+	width : 600px;
+}
+
+.center
+{
+	padding : 15px; 
+	padding-top : 0;
+}
+
+.center h3
+{
+	font-size : 16px;
+	margin : 0;
+	font-weight : normal;
+}
+
+.center h4
+{
+	font-weight : normal;
+	width : 150px;
+	margin-top : 10px;
+	margin-bottom : 0;
+}
+
+.dijak
+{
+	width : 570px;
+}
+
+#szemelygepjarmuvek
+{
+	display : none;
+}
+
+#motorkerekparok
+{
+	display : none;
+}
+
+#kisteherautok
+{
+	display : none;
+}
+
+#tehergepkocsi
+{
+	display : none;
+}
+
+#autobuszok
+{
+	display : none;
+}
+
+#mezogazdasagi
+{
+	display : none;
+}
+
+#potkocsi
+{
+	display : none;
+}

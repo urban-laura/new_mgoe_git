@@ -1,0 +1,124 @@
+.buttons-wrapper 
+{
+	color: #01224a;
+	overflow: hidden;
+	padding-left : 6px;
+}
+
+.button-wrapper 
+{
+	padding: 8px 6px;
+	float: left;
+}
+
+.button 
+{
+	width : 90px;
+	height : 25px;
+	background : #005398;
+	border-radius : 3px;
+	border : solid 1px #01224a;
+	color : white;
+	font-weight : bold; 
+}
+
+.button:hover
+{
+	background-color : #0882E8;
+}
+
+.center
+{
+	padding : 15px; 
+	padding-top : 0;
+}
+
+.center h2
+{
+	text-align : center; 
+	padding-top : 10px;
+	margin : 0;
+	font-size : 18px;
+}
+
+.center h3
+{
+	font-size : 16px;
+	margin : 0;
+	margin-top : 15px;
+}
+
+.center h4
+{
+	font-weight : normal;
+	width : 150px;
+	margin-top : 10px;
+	margin-bottom : 0;
+}
+
+.center h5
+{
+	font-weight : normal;
+	margin-top : 10px;
+	margin-bottom : 0;
+	font-size : 16px;
+	text-align : center;
+}
+
+.year_div
+{
+	float : left;
+}
+
+.month_div
+{
+	margin-left : 168px;
+}
+
+.date
+{
+	width : 70px;
+}
+
+.stb
+{
+	width : 168px;
+}
+
+.active
+{
+	background-color : orange;
+}
+
+#sum
+{
+	width : 420px; 
+	padding-top : 10px; 
+	text-align : center;
+}
+
+#sum h4
+{
+	font-weight : normal;
+	font-size : 16px;
+	margin : 10px;
+}
+
+#sum h5
+{
+	font-weight : normal;
+	font-size : 14px;
+	margin : 0;
+}
+
+.error
+{
+	color: red;
+	text-align : center;
+}
+
+.error h3
+{
+	font-weight : normal;
+	margin-top : 5px;
+}
