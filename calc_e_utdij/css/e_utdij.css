@@ -1,0 +1,43 @@
+#center
+{
+	padding : 15px; 
+	padding-top : 0;
+}
+
+#center h4
+{
+	font-weight : normal;
+	margin-top : 10px;
+	margin-bottom : 0px;
+}
+
+#sum h4
+{
+	font-weight : normal;
+	margin-top : 10px;
+	margin-bottom : 0px;
+	text-align : center;
+}
+
+.category
+{
+	width : 212px;
+}
+
+.number
+{
+	width : 148px;
+}
+
+.error
+{
+	color: red;
+	text-align : center;
+}
+
+.error h3
+{
+	font-weight : normal;
+	margin : 0px;
+	font-size : 16px;
+}

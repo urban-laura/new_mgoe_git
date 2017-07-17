@@ -65,7 +65,7 @@ Napok száma:
 <div id='quad' class='###visibility-quad-class###'>
 <h4>
 Napok száma:
-<input type='number' name='q_napok' class='e_days' value='###q_napok###'>
+<input type='number' name='q_napok' class='e_days days' value='###q_napok###'>
 </h4>
 <div class='error'>
 <h3>###error###</h3>
@@ -92,7 +92,7 @@ Férőhely:
 
 <h4>
 Napok száma:
-<input type='number' name='a_napok' class='f_days' value='###a_napok###'>
+<input type='number' name='a_napok' class='f_days days' value='###a_napok###'>
 </h4>
 <div class='error'>
 <h3>###error###</h3>
@@ -103,7 +103,7 @@ Napok száma:
 <div id='trolibusz' class='###visibility-trolibusz-class###'>
 <h4>
 Napok száma:
-<input type='number' name='tr_napok' class='e_days' value='###tr_napok###'>
+<input type='number' name='tr_napok' class='e_days days' value='###tr_napok###'>
 </h4>
 <div class='error'>
 <h3>###error###</h3>
@@ -121,7 +121,7 @@ Napok száma:
 
 <h4>
 Napok száma:
-<input type='number' name='t_napok' class='o_days' value='###t_napok###'>
+<input type='number' name='t_napok' class='o_days days' value='###t_napok###'>
 </h4>
 <div class='error'>
 <h3>###error###</h3>
@@ -132,7 +132,7 @@ Napok száma:
 <div id='vontato' class='###visibility-vontato-class###'>
 <h4>
 Napok száma:
-<input type='number' name='v_napok' class='e_days' value='###v_napok###'>
+<input type='number' name='v_napok' class='e_days days' value='###v_napok###'>
 </h4>
 <div class='error'>
 <h3>###error###</h3>
@@ -143,7 +143,7 @@ Napok száma:
 <div id='mezogazdasagi_vontato' class='###visibility-mezogazdasagi_vontato-class###'>
 <h4>
 Napok száma:
-<input type='number' name='mv_napok' class='e_days' value='###mv_napok###'>
+<input type='number' name='mv_napok' class='e_days days' value='###mv_napok###'>
 </h4>
 <div class='error'>
 <h3>###error###</h3>
@@ -164,7 +164,7 @@ Napok száma:
 
 <h4>
 Napok száma:
-<input type='number' name='p_napok' class='o_days' value='###p_napok###'>
+<input type='number' name='p_napok' class='o_days days' value='###p_napok###'>
 </h4>
 <div class='error'>
 <h3>###error###</h3>
@@ -175,7 +175,7 @@ Napok száma:
 <div id='lassu_jarmu' class='###visibility-lassu_jarmu-class###'>
 <h4>
 Napok száma:
-<input type='number' name='l_napok' class='e_days' value='###l_napok###'>
+<input type='number' name='l_napok' class='e_days days' value='###l_napok###'>
 </h4>
 <div class='error'>
 <h3>###error###</h3>
@@ -186,7 +186,7 @@ Napok száma:
 <div id='munkagep' class='###visibility-munkagep-class###'>
 <h4>
 Napok száma:
-<input type='number' name='mu_napok' class='e_days' value='###mu_napok###'>
+<input type='number' name='mu_napok' class='e_days days' value='###mu_napok###'>
 </h4>
 <div class='error'>
 <h3>###error###</h3>
