@@ -1,4 +1,4 @@
-<head>
+﻿<head>
 <link rel='stylesheet' type='text/css' href='../calc_css/calc.css'>
 <link rel='stylesheet' type='text/css' href='css/cegauto_ado.css'>
 
@@ -44,17 +44,17 @@ Környezetvédelmi osztály:
 <table>
 <tr>
 <td class='title2'>Havonta:</td>
-<td class='value'>###month-value### Ft</td>
+<td class='value month'>###month-value### Ft</td>
 </tr>
 
 <tr>
 <td class='title2'>Negyedévente:</td>
-<td class='value'>###month3-value### Ft</td>
+<td class='value month3'>###month3-value### Ft</td>
 </tr>
 
 <tr>
 <td class='title2'>Évente:</td>
-<td class='value'>###year-value### Ft</td>
+<td class='value year'>###year-value### Ft</td>
 </tr>
 </table>
 </div>
