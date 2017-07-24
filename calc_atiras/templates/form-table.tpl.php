@@ -218,22 +218,22 @@ Kategória:
 <table>
 <tr>
 <td class='title2'>Vagyonszerzési illeték:</td>
-<td class='value'>###vagyonszerzesi### Ft</td>
+<td class='value vagyon'>###vagyonszerzesi### Ft</td>
 </tr>
 
 <tr>
 <td class='title2'>Új forgalmi engedély:</td>
-<td class='value'>###forgalmi### Ft</td>
+<td class='value forgalmi'>###forgalmi### Ft</td>
 </tr>
 
 <tr>
 <td class='title2'>Törzskönyv:</td>
-<td class='value'>###torzskonyv### Ft</td>
+<td class='value torzskonyv'>###torzskonyv### Ft</td>
 </tr>
 
 <tr>
 <td class='title2'>Eredetvizsga:</td>
-<td class='value'>###hatosagi_dij### Ft</td>
+<td class='value hatosagi'>###hatosagi_dij### Ft</td>
 </tr>
 
 <tr>
