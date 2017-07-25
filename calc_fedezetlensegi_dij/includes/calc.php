@@ -75,7 +75,7 @@ if($_POST['type'] == 'Trolibusz')
 
 if($_POST['type'] == 'Tehergépkocsi')
 {
-	$days = $_POST['a_napok'];
+	$days = $_POST['t_napok'];
 	$tomeg = $_POST['t_ossztomeg'];
 	
 	$amounts[] = array('x'=>'0 - 3500',     'value'=>540);
