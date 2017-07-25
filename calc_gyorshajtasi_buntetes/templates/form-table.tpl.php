@@ -24,7 +24,7 @@ Sebességhatár:
 km/h
 </h4>
 <div id='error'>
-<h3>###error1###</h3>
+<h3 class='error1'>###error1###</h3>
 </div>
 <h4>
 
@@ -33,7 +33,7 @@ km/h
 km/h
 </h4>
 <div id='error'>
-<h3>###error2###</h3>
+<h3 class='error2'>###error2###</h3>
 </div>
 
 </div>
