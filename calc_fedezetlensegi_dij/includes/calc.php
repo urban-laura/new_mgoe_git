@@ -109,9 +109,9 @@ if($_POST['type'] == 'Pótkocsi, félpótkocsi')
 	$days = $_POST['p_napok'];
 	$tomeg = $_POST['p_ossztomeg'];
 	
-	$amounts[] = array('x'=>'0 - 3500',     'value'=>540);
-	$amounts[] = array('x'=>'3501 - 12000', 'value'=>940);
-	$amounts[] = array('x'=>'>=12001',      'value'=>2420);
+	$amounts[] = array('x'=>'1 - 750',     'value'=>540);
+	$amounts[] = array('x'=>'751 - 10000', 'value'=>940);
+	$amounts[] = array('x'=>'>=10001',      'value'=>2420);
 	
 	foreach($amounts as $amount)
 	{
