@@ -2,7 +2,7 @@
 
 $sum_visibility = '';
 
-if(!isset($_POST['submitted']))
+if(!isset($_POST['submitted']) || ($c_year == $n_year && $c_month > $n_month))
 {
 	$sum_visibility = 'invisible';
 }
