@@ -9,9 +9,9 @@ include('includes/form-select-year.php');
 include('includes/form-select-month.php');
 include('includes/form-select-barrel.php');
 
-include('includes/sum-visibility.php');
-
 include('includes/calc.php');
+
+include('includes/sum-visibility.php');
 
 include('includes/sum.php');
 
