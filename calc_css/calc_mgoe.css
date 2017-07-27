@@ -1,0 +1,84 @@
+
+.frame
+{
+	width: 319px;
+	font-family: 'Ubuntu', Light Italic;
+	background-color: #F0F0F0;
+	font-size: 14px;
+	color: #2D2D2D;
+	border-radius: 5px 5px 5px 5px;
+	font-weight: normal;
+	border-left: solid 1px #C1C1C1;
+	border-right: solid 1px #C1C1C1;
+	border-bottom: solid 1px #C1C1C1;
+}
+
+.calc-form
+{
+	margin: 0;
+}
+
+.title
+{
+	background-color: #0088CC;
+	height: 47px; 
+	line-height: 47px;
+	border-radius: 5px 5px 0px 0px; 
+	padding-left: 31px;
+	padding-right: 31px;
+	border-top: solid 1px #C1C1C1;
+	border-bottom: solid 1px #C1C1C1;
+}
+
+.title h1
+{
+	font-size: 18px;
+	color: white;
+	text-align: center;	
+	font-family: 'Ubuntu', Medium;
+	margin: 0;
+}
+
+.invisible
+{
+	display: none;
+}
+
+.form-submit
+{
+	width: 165px;
+	height: 34px;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	font-family: 'Ubuntu', Medium;
+	background-color: #0088CC;
+	border-radius: 5px;
+	border: solid 1px #167AAC;
+}
+
+.form-submit:hover
+{
+	background-color: #FF7E00;
+	border: solid 1px #FF8E20;
+}
+
+.submit
+{
+	text-align: center;
+	padding-top: 33px;
+	padding-bottom: 24px;
+}
+
+#zero
+{
+	height: 9px;
+	border-radius: 0px 0px 5px 5px; 
+	background-color: #0088CC;
+}
+
+.validation-error
+{
+	color: red;
+	border: 1px solid red;
+}

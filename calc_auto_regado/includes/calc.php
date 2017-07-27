@@ -1,5 +1,4 @@
 <?php
-
 if(!isset($_POST['fuel']) || $_POST['fuel']=='benzin')
 {
 	$c_year = $_POST['c_year_b'];

@@ -6,6 +6,8 @@ $output = file_get_contents('templates/form-table.tpl.php');
 $debug = array();
 
 include('includes/fuel.php');
+
+include('includes/form-select-type.php');
 //benzin
 include('includes/form-select-year-b.php');
 include('includes/form-select-month-b.php');
@@ -23,8 +25,6 @@ include('includes/form-select-year-h.php');
 include('includes/form-select-month-h.php');
 
 include('includes/calc.php');
-
-include('includes/sum-visibility.php');
 
 include('includes/sum.php');
 
