@@ -1,7 +1,7 @@
 ﻿<head>
 
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu"/>
-<link rel='stylesheet' type='text/css' href='../calc_css/calc_mgoe.css'>
+<link rel='stylesheet' type='text/css' href='../calc_css/calc###css-source###.css'>
 <link rel='stylesheet' type='text/css' href='css/regado.css'>
 
 

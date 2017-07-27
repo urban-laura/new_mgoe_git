@@ -1,4 +1,18 @@
 <?php
+
+// choose right css
+if (isset($_GET['css'])) {
+	if (file_exists('css/calc_' . $_GET['css'] . '.css')) {
+	  $output = str_replace('###css-source###', '_' . $_GET['css'], $output);
+	}
+	else {
+		$output = str_replace('###css-source###', '', $output);
+	}
+}
+else {
+	$output = str_replace('###css-source###', '', $output);
+}
+
 if(!isset($_POST['fuel']) || $_POST['fuel']=='benzin')
 {
 	$c_year = $_POST['c_year_b'];
