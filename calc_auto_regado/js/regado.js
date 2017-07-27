@@ -5,6 +5,9 @@ $(document).ready(function(){
 		$('.sum-value').html('0');
 		$('.month-value').html('0');
 		
+		$('.error_color').removeClass('validation-error');
+		$('#sum').removeClass('invisible');
+		
 		if($('#type option:selected').text() == 'Benzin')
 		{
 			$('#dizel').addClass('invisible');	
@@ -49,15 +52,5 @@ $(document).ready(function(){
 			$('#fuel').val('elektromos');
 		}
 	})
-	
-	$('form[name="calculator"]').submit(function(e)
-	{
-		e.
-		if($('select[name="c_year_b"]').val() == null)
-		{
-			$('select[name="c_year_b"]').addClass('validation-error');
-			console.log($('input[name="submitted"]').val());
-		}
-	})//submit
 
 })//ready

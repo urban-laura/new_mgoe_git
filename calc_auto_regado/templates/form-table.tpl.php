@@ -17,9 +17,14 @@
 <h1>Személyautó regisztrációs adó</h1>
 </div>
 
-<div id='sum'>	
+<div id='sum' class='###sum-visibility###'>	
 <h4><span class='sum-value'>###sum###</span> Ft</h4>
 <h5>Eltelt hónapok száma: <strong><span class='month-value'>###month###</span></strong></h5>
+</div>
+
+<div id='error' class='###error-visibility###'>	
+<h5>###error1###</h5>
+<h5>###error2###</h5>
 </div>
 
 <form name='calculator' method='post' class='calc-form'>
@@ -38,22 +43,22 @@
 
 <h3>Első forgalomba helyezés:</h3>
 
-<select name='c_year_b' class='date koz'>
+<select name='c_year_b' class='error_color date koz ###c_year###'>
 <option value="0" disabled selected class='invisible'>Év</option>
 	###year-b-options###
 </select>
 
-<select name='c_month_b' class='date'>
+<select name='c_month_b' class='error_color date ###c_month###'>
 <option value="0" disabled selected class='invisible'>Hónap</option>
 	###month-b-options###
 </select>
 
-<select name='barrel_b' class='stb'>
+<select name='barrel_b' class='error_color stb  ###c_barrel###'>
 <option value="0" disabled selected class='invisible'>Hengerűrtartalom</option>
 	###barrel-b-options###
 </select>
 
-<select name='env_b'>
+<select name='env_b' class='error_color ###c_env###'>
 <option value="0" disabled selected class='invisible'>Környezetvédelmi osztály</option>
 	###env-b-options###
 </select>
@@ -64,39 +69,38 @@
 
 <h3>Első forgalomba helyezés:</h3>
 
-<select name='c_year_d' class='date koz'>
+<select name='c_year_d' class='error_color date koz ###c_year###'>
 <option value="0" disabled selected class='invisible'>Év</option>
 	###year-d-options###
 </select>
 
-<select name='c_month_d' class='date'>
+<select name='c_month_d' class='error_color date ###c_month###'>
 <option value="0" disabled selected class='invisible'>Hónap</option>
 	###month-d-options###
 </select>
 
-<select name='barrel_d' class='stb'>
+<select name='barrel_d' class='error_color stb ###c_barrel###'>
 <option value="0" disabled selected class='invisible'>Hengerűrtartalom</option>
 	###barrel-d-options###
 </select>
 
-<select name='env_d'>
+<select name='env_d' class='error_color ###c_env###'>
 <option value="0" disabled selected class='invisible'>Környezetvédelmi osztály</option>
 	###env-d-options###
 </select>
 </div>
-
 
 <!-- Hibrid -->
 <div class='center ###visibility-hibrid-class###' id='hibrid'>
 
 <h3>Első forgalomba helyezés:</h3>
 
-<select name='c_year_h' class='date koz'>
+<select name='c_year_h' class='error_color date koz ###c_year###'>
 <option value="0" disabled selected class='invisible'>Év</option>
 	###year-h-options###
 </select>
 
-<select name='c_month_h' class='date'>
+<select name='c_month_h' class='error_color date ###c_month###'>
 <option value="0" disabled selected class='invisible'>Hónap</option>
 	###month-h-options###
 </select>
@@ -108,7 +112,7 @@
 </div>
 
 <div class='submit'>
-<input type='hidden' value='submitted' name='submitted'>
+<input type='hidden' value='submitted' name='submitted' class='submitted'>
 <input type='submit' id='submit' value='Számold ki!' class='form-submit'>
 </div>
 

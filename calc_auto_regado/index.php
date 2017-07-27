@@ -26,6 +26,8 @@ include('includes/form-select-month-h.php');
 
 include('includes/calc.php');
 
+include('includes/sum-visibility.php');
+
 include('includes/sum.php');
 
 include('includes/error.php');

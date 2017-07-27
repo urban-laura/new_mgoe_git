@@ -1,15 +1,19 @@
 <?php
 
 // choose right css
-if (isset($_GET['css'])) {
-	if (file_exists('css/calc_' . $_GET['css'] . '.css')) {
+if(isset($_GET['css'])) 
+{
+	if (file_exists('../calc_css/calc_' . $_GET['css'] . '.css')) 
+	{
 	  $output = str_replace('###css-source###', '_' . $_GET['css'], $output);
 	}
-	else {
+	else 
+	{
 		$output = str_replace('###css-source###', '', $output);
 	}
 }
-else {
+else 
+{
 	$output = str_replace('###css-source###', '', $output);
 }
 
