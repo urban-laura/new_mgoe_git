@@ -29,23 +29,21 @@ if(isset($_POST['submitted']))
 
 }
 
-$message1 = '';
-$message2 = '';
+$message = '';
 
 if($c_year == $n_year && $c_month > $n_month)
 {
-	$message1 = 'Az első forgalomba helyezés dátuma nem lehet későbbi mint az aktuális dátum.';
+	$message .= '<li><h5>Az első forgalomba helyezés dátuma nem lehet későbbi mint az aktuális dátum. </h5></li>';
 }
 
 if(isset($_POST['submitted']) && $_POST['fuel'] != 'hibrid' && ($c_year == null || $c_month == null || $c_barrel == null || $c_env == null))
 {
-	$message2 = 'Kérem töltse ki az összes mezőt.';
+	$message .= '<li><h5>Kérem töltse ki az összes mezőt. </h5></li>';
 }
 
 if(isset($_POST['submitted']) && $_POST['fuel'] == 'hibrid' && ($c_year == null || $c_month == null))
 {
-	$message2 = 'Kérem töltse ki az összes mezőt.';
+	$message .= '<li><h5>Kérem töltse ki az összes mezőt.</h5></li>';
 }
 
-$output = str_replace('###error1###', $message1, $output);
-$output = str_replace('###error2###', $message2, $output);
+$output = str_replace('###error###', $message, $output);
