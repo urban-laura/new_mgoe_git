@@ -79,6 +79,6 @@
 
 .validation-error
 {
-	color: red;
-	border: 1px solid red;
+	color: #E20000;
+	border: 1px solid #E20000;
 }

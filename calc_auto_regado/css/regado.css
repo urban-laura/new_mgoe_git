@@ -86,19 +86,19 @@ select
 #error
 {
 	height : 89px;
-	xtext-align : center;
 	padding-left : 31px;
 	padding-right : 31px;
 	background-color : #E1E1E1;
 	border-bottom : solid 1px #C1C1C1;
 }
-
+	
 #error h5
 {
 	font-family :  'Ubuntu', Light Italic;
 	font-weight : normal;
 	font-style : italic;
 	font-size : 13px;
-	color : red;
+	color : #E20000;
 	margin : 0;
+	padding-top : 10px;
 }
