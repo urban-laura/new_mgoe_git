@@ -1,63 +1,57 @@
 ﻿<head>
-<link rel='stylesheet' type='text/css' href='../calc_css/calc.css'>
-<link rel='stylesheet' type='text/css' href='css/regado.css'>
-
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu"/>
+	<link rel='stylesheet' type='text/css' href='../calc_css/calc###css-source###.css'>
+	<link rel='stylesheet' type='text/css' href='css/regado###regado-css-source###.css'>
 </head>
 
 <body>
 
-<div class='frame'>
+	<div class='frame'>
 
-<div class='title'>
-<h1>Motorkerékpár regisztrációs adó</h1>
-</div>
+		<div class='title'>
+			<h1>Motorkerékpár<br /> regisztrációs adó</h1>
+		</div>
 
-<form name='calculator' method='post' class='calc-form'>
+		<div id='sum' class='###sum-visibility###'>	
+			<h4>###sum### Ft</h4>
+			<h5>Eltelt hónapok száma: <strong>###month###</strong></h5>
+		</div>
+		
+		<div id='error' class='###error-visibility###'>
+			<h5>###error1###</h5>
+			<h5>###error2###</h5>
+		</div>
 
-<div id='motor'>
+		<form name='calculator' method='post' class='calc-form'>
 
-<h3>Az első forgalomba helyezés dátuma: </h3>
+			<div class='center'>
 
-<div class='year_div'>
-<h4>Év: 
-<select name='m_year' class='date'>
-	###year-m-options###
-</select>
-</h4>
-</div>
+				<h3>Első forgalomba helyezés:</h3>
 
-<div class='month_div'>
-<h4>Hónap:
-<select name='m_month' class='date'>
-	###month-m-options###
-</select>
-</h4>
-</div>
+				<select name='m_year' class='error_color date koz ###m_year###'>
+					<option value="0" disabled selected class='invisible'>Év</option>
+					###year-m-options###
+				</select>
 
-<div id='error'>
-<h3>###error###</h3>
-</div>
+				<select name='m_month' class='error_color date ###m_month###'>
+					<option value="0" disabled selected class='invisible'>Hónap</option>
+					###month-m-options###
+				</select>
 
-<h3>Hengerűrtartalom: </h3>
-<select name='barrel_m' class='barrel_m'>
-	###barrel-m-options###
-</select>
-</div>
+				<select name='barrel_m' class='error_color stb  ###m_barrel###'>
+					<option value="0" disabled selected class='invisible'>Hengerűrtartalom</option>
+					###barrel-m-options###
+				</select>
+	
 
-<div class='submit'>
-<input type='hidden' value='submitted' name='submitted'>
-<input type='submit' id='submit' value='Számol' class='form-submit'>
-</div>
+				<div class='submit'>
+					<input type='hidden' value='submitted' name='submitted'>
+					<input type='submit' id='submit' value='Számold ki!' class='form-submit'>
+				</div>
 
-</form>
-
-<div id='sum' class='###sum-visibility###'>	
-
-<h5>###month-message###</h5>
-
-<h4>###sum-message###</h4>
-</div>
-
-</div>
-
+			</div>
+		</form>
+		<div id='zero'>
+		</div>
+	</div>
 </body>

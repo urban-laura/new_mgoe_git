@@ -1,4 +1,30 @@
 <?php
+if(isset($_GET['css'])) 
+{
+	if (file_exists('../calc_css/calc_' . $_GET['css'] . '.css')) 
+	{
+	  $output = str_replace('###css-source###', '_' . $_GET['css'], $output);
+	}
+	else 
+	{
+		$output = str_replace('###css-source###', '', $output);
+	}
+	
+	if (file_exists('css/regado_' . $_GET['css'] . '.css')) 
+	{
+	  $output = str_replace('###regado-css-source###', '_' . $_GET['css'], $output);
+	}
+	else 
+	{
+		$output = str_replace('###regado-css-source###', '', $output);
+	}
+}
+else 
+{
+	$output = str_replace('###regado-css-source###', '', $output);
+	$output = str_replace('###css-source###', '', $output);
+}
+
 $m_year = $_POST['m_year'];
 $m_month = $_POST['m_month'];
 $m_barrel = $_POST['barrel_m'];

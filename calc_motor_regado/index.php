@@ -15,6 +15,8 @@ include('includes/sum-visibility.php');
 
 include('includes/sum.php');
 
+include('includes/error-visibility.php');
+
 include('includes/error.php');
 
 print $output;

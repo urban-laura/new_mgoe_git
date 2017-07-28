@@ -20,8 +20,8 @@
 .title
 {
 	background-color: #0088CC;
-	height: 47px; 
-	line-height: 47px;
+	height: 35px; 
+	padding-top : 12px;
 	border-radius: 5px 5px 0px 0px; 
 	padding-left: 31px;
 	padding-right: 31px;

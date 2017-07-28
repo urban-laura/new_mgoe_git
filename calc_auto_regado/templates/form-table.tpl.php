@@ -15,7 +15,7 @@
 
     <div class='title'>
       <h1>Személyautó regisztrációs adó</h1>
-  </div>
+	</div>
 
   <div id='sum' class='###sum-visibility###'>	
     <h4><span class='sum-value'>###sum###</span> Ft</h4>
