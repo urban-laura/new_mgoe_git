@@ -7,6 +7,7 @@ $(document).ready(function(){
 		
 		$('.error_color').removeClass('validation-error');
 		$('#sum').removeClass('invisible');
+		$('#error').addClass('invisible');
 		
 		if($('#type option:selected').text() == 'Benzin')
 		{

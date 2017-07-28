@@ -2,7 +2,7 @@
 
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu"/>
   <link rel='stylesheet' type='text/css' href='../calc_css/calc###css-source###.css'>
-  <link rel='stylesheet' type='text/css' href='css/regado.css'>
+  <link rel='stylesheet' type='text/css' href='css/regado###regado-css-source###.css'>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -22,10 +22,9 @@
     <h5>Eltelt hónapok száma: <strong><span class='month-value'>###month###</span></strong></h5>
   </div>
 
-  <div id='error'>
-    <ul>	
-      ###error###
-    </ul>
+  <div id='error' class='###error-visibility###'>
+	<h5>###error1###</h5>
+	<h5>###error2###</h5>
   </div>
 
   <form name='calculator' method='post' class='calc-form'>

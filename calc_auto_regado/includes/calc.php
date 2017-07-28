@@ -11,9 +11,19 @@ if(isset($_GET['css']))
 	{
 		$output = str_replace('###css-source###', '', $output);
 	}
+	
+	if (file_exists('css/regado_' . $_GET['css'] . '.css')) 
+	{
+	  $output = str_replace('###regado-css-source###', '_' . $_GET['css'], $output);
+	}
+	else 
+	{
+		$output = str_replace('###regado-css-source###', '', $output);
+	}
 }
 else 
 {
+	$output = str_replace('###regado-css-source###', '', $output);
 	$output = str_replace('###css-source###', '', $output);
 }
 
@@ -30,7 +40,7 @@ if($_POST['fuel']=='dizel')
 	$c_year = $_POST['c_year_d'];
 	$c_month = $_POST['c_month_d'];
 	$c_barrel = $_POST['barrel_d'];
-	$c_env = $_POST['env_b'];
+	$c_env = $_POST['env_d'];
 }
 
 if($_POST['fuel']=='hibrid')

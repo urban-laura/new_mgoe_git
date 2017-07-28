@@ -2,7 +2,6 @@
 .frame
 {
 	width: 319px;
-	font-family: 'Ubuntu', Light Italic;
 	background-color: #F0F0F0;
 	font-size: 14px;
 	color: #2D2D2D;
@@ -35,7 +34,8 @@
 	font-size: 18px;
 	color: white;
 	text-align: center;	
-	font-family: 'Ubuntu', Medium;
+	font-family: 'Ubuntu';
+	font-style : medium;
 	margin: 0;
 }
 
@@ -51,7 +51,8 @@
 	text-align: center;
 	font-size: 18px;
 	color: white;
-	font-family: 'Ubuntu', Medium;
+	font-family: 'Ubuntu';
+	font-style : medium;
 	background-color: #0088CC;
 	border-radius: 5px;
 	border: solid 1px #167AAC;
