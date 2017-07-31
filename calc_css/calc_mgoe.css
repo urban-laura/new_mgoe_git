@@ -83,3 +83,15 @@
 	color: #E20000;
 	border: 1px solid #E20000;
 }
+
+ul
+{
+	margin : 0;
+	padding-left: 15px;
+	list-style-image: url('../images/counter_x.png');
+}
+
+li
+{
+	padding-left : 15px;
+}

@@ -29,12 +29,12 @@ $message2 = '';
 
 if($m_year == $n_year && $m_month > $n_month)
 {
-	$message1 = 'Az első forgalomba helyezés dátuma nem lehet későbbi mint az aktuális dátum.';
+	$message1 = '<ul><li>Az első forgalomba helyezés dátuma nem lehet későbbi, mint az aktuális dátum.</li></ul>';
 }
 
 if(isset($_POST['submitted']) && ($m_year == null || $m_month == null || $m_barrel == null))
 {
-	$message2 = 'Kérem töltse ki az összes mezőt.';
+	$message2 = '<ul><li>Kérem, töltse ki az összes mezőt.</li></ul>';
 }
 
 $output = str_replace('###error1###', $message1, $output);

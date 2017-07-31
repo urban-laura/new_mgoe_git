@@ -35,17 +35,17 @@ $message2 = '';
 
 if($c_year == $n_year && $c_month > $n_month)
 {
-	$message1 = 'Az első forgalomba helyezés dátuma nem lehet későbbi mint az aktuális dátum.';
+	$message1 = '<ul><li>Az első forgalomba helyezés dátuma nem lehet későbbi, mint az aktuális dátum.</li></ul>';
 }
 
 if(isset($_POST['submitted']) && $_POST['fuel'] != 'hibrid' && ($c_year == null || $c_month == null || $c_barrel == null || $c_env == null))
 {
-	$message2 = 'Kérem töltse ki az összes mezőt.';
+	$message2 = '<ul><li>Kérem, töltse ki az összes mezőt.</li></ul>';
 }
 
 if(isset($_POST['submitted']) && $_POST['fuel'] == 'hibrid' && ($c_year == null || $c_month == null))
 {
-	$message2 = 'Kérem töltse ki az összes mezőt.';
+	$message2 = '<ul><li>Kérem, töltse ki az összes mezőt.</li></ul>';
 }
 
 $output = str_replace('###error1###', $message1, $output);

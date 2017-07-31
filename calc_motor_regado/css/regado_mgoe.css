@@ -42,7 +42,7 @@
 	font-family:  'Ubuntu';
 	font-weight: 400;
 	font-style: italic;
-	font-size: 13px;
+	font-size: 12px;
 	color: #E20000;
 	margin: 0;
 	padding-top: 10px;
@@ -93,4 +93,3 @@ select
 {
 	margin-top: 24px;
 }
-
