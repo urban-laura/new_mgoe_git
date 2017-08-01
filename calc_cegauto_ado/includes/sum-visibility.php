@@ -2,14 +2,9 @@
 
 $sum_visibility = '';
 
-if(!isset($_POST['submitted']))
+if(isset($_POST['submitted']) && ($power == null || $env == null))
 {
 	$sum_visibility = 'invisible';
-}
-
-else
-{
-	$sum_visibility = '';
 }
 
 $output = str_replace('###sum-visibility###', $sum_visibility, $output);

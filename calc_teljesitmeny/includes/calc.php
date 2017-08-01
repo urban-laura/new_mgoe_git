@@ -12,7 +12,7 @@ if(isset($_GET['css']))
 		$output = str_replace('###css-source###', '', $output);
 	}
 	
-	if (file_exists('css/regado_' . $_GET['css'] . '.css')) 
+	if (file_exists('css/teljesitmeny_' . $_GET['css'] . '.css')) 
 	{
 	  $output = str_replace('###teljesitmeny-css-source###', '_' . $_GET['css'], $output);
 	}

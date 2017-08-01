@@ -23,19 +23,25 @@
 
 			<div class='center'>
 
-				<h4>Évjárat:
-				<select name='year' id='year' class='date'>
+				<h4>Gyártási év: 
+				<select name='year' id='year'>
+					<option value="0" disabled selected class='invisible'>Év</option>
 					###year-options###
 				</select>
 				</h4>
 
-				<h4>
-				Teljesítmény:
-				<input type='text' name='teljesitmeny' id='power' class='date' value='###teljesitmeny###' placeholder="Teljesítmény">
-				<input type="checkbox" name='kw' class="slectOne" ###kw###>kW
-				<input type="checkbox" name='le' class="slectOne" ###le###>LE
-				</h4>
+				<input type='text' name='teljesitmeny' id='power' value='###teljesitmeny###' placeholder="Teljesítmény">
+					<label class="kw">
+						<input type="checkbox" name='kw' class="slectOne" ###kw###>
+						<span></span>
+					</label>
+					<p>kW</p>
 
+					<label class="le">
+						<input type="checkbox" name='le' class="slectOne" ###le###>LE
+						<span></span>
+					</label>
+			
 				<div id='error'>
 					<h4>###error###</h4>
 				</div>
@@ -46,7 +52,6 @@
 				<input type='hidden' value='submitted' name='submitted' class="submitted">
 				<input type='submit' id='submit' value='Számold ki!' class='form-submit'>
 			</div>
-
 		</form>	
 
  		<div id='zero'>

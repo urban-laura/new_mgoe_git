@@ -1,21 +1,14 @@
 <?php
 
-$month_value = '';
-$month3_value = '';
-$year_value = '';
+$month_value = 0;
+$month3_value = 0;
+$year_value = 0;
 
 if(isset($_POST['submitted']))
 {
 	$month_value = $debug['month'];
 	$month3_value = $debug['month3'];
 	$year_value = $debug['year'];
-}
-
-else
-{
-	$month_value = '';
-	$month3_value = '';
-	$year_value = '';
 }
 
 $output = str_replace('###month-value###', $month_value, $output);

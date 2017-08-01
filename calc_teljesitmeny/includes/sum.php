@@ -1,8 +1,8 @@
 <?php
 
-$sum_value = '';
+$sum_value = 0;
 
-if(isset($_POST['submitted']) && ($teljesitmeny != '' || $teljesitmeny > 15))
+if(isset($_POST['submitted']) && $teljesitmeny != '')
 {
 	$sum_value = $debug['sum'] = $sum2;
 }

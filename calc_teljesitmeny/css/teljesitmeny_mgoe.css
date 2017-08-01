@@ -3,32 +3,30 @@
 	font-weight : normal;
 	padding-left : 31px;
 	padding-right : 31px;
+	padding-top: 30px;
 	
 }
 
 .center h4
 {
-	font-weight : normal;
-	margin-top : 10px;
-	margin-bottom : 0;
-}
-
-
-.date
-{
-	width : 70px;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: regular;
+	margin: 0;
+	padding-left: 19px;
+	padding-right: 19px;
+	margin-bottom: 30px;
 }
 
 #sum
 {
-
-	height: 89px;
-	line-height: 89px;
+	height: 90px;
+	line-height: 90px;
 }
 
 #sum h4
 {
-	font-weight : normal;
+	font-size: 36px;
 	text-align : center;
 	margin : 0;
 }
@@ -43,4 +41,55 @@
 {
 	font-weight : normal;
 	margin : 0px;
+}
+
+select
+{
+	font-weight : 400;
+	font-style : italic;
+	font-size : 14px;
+	padding-left : 12px;
+	height : 34px;
+	width: 116px;
+	color : #2D2D2D;
+	margin-left: 15px;
+}
+
+#power
+{
+	font-weight : 400;
+	font-style : italic;
+	font-size : 14px;
+	padding-left : 12px;
+	height : 34px;
+	width: 116px;
+}
+
+checkbox
+{
+	position: relative;
+}
+
+label, p
+{
+	float: right;
+}
+
+.kw label
+{
+	width: 70px;
+}
+
+.kw input
+{
+    position: relative;
+    z-index: -9999;
+}
+
+.kw span 
+{
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-color: white;
 }
