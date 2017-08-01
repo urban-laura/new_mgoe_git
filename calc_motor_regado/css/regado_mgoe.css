@@ -6,22 +6,17 @@
 #sum
 {
 	height: 81px;
-	text-align: center;
 	padding-top: 8px;
-	background-color: #E1E1E1;
-	border-bottom: solid 1px #C1C1C1;
 }
 
 #sum h4
 {
-	font-family: 'Ubuntu';
 	font-size: 36px;
 	margin: 0;
 }
 
 #sum h5
 {
-	font-family:  'Ubuntu';
 	font-weight: 400;
 	font-style: italic;
 	font-size: 16px;
@@ -39,7 +34,6 @@
 	
 #error h5
 {
-	font-family:  'Ubuntu';
 	font-weight: 400;
 	font-style: italic;
 	font-size: 12px;
@@ -50,7 +44,6 @@
 
 select
 {
-	font-family:  'Ubuntu';
 	font-weight: 400;
 	font-style: italic;
 	font-size: 14px;
@@ -71,7 +64,6 @@ select
 
 .center h3
 {
-	font-family: 'Ubuntu';
 	font-weight: normal;
 	font-style: regular;
 	font-size: 16px;

@@ -1,22 +1,50 @@
 <?php
 
+// choose right css
+if(isset($_GET['css'])) 
+{
+	if (file_exists('../calc_css/calc_' . $_GET['css'] . '.css')) 
+	{
+	  $output = str_replace('###css-source###', '_' . $_GET['css'], $output);
+	}
+	else 
+	{
+		$output = str_replace('###css-source###', '', $output);
+	}
+	
+	if (file_exists('css/regado_' . $_GET['css'] . '.css')) 
+	{
+	  $output = str_replace('###teljesitmeny-css-source###', '_' . $_GET['css'], $output);
+	}
+	else 
+	{
+		$output = str_replace('###teljesitmeny-css-source###', '', $output);
+	}
+}
+else 
+{
+	$output = str_replace('###teljesitmeny-css-source###', '', $output);
+	$output = str_replace('###css-source###', '', $output);
+}
+
 $year = $_POST['year'];
 $teljesitmeny = $_POST['teljesitmeny'];
-$or = $_POST['or'];
+$kw = $_POST['kw'];
+$le = $_POST['le'];
 
 $n_year = (int)date('Y');
 
 $t_year = $n_year - $year;
 
 
-if($or == 'kW')
+if(isset($_POST['kw']))
 {
-$kw = $teljesitmeny;
+	$kw = $teljesitmeny;
 }
 
-if($or == 'LE')
+if(isset($_POST['le']))
 {
-$kw = $teljesitmeny * 0.745;
+	$kw = $teljesitmeny * 0.745;
 }
 
 

@@ -4,6 +4,13 @@ body
 	padding: 0;	
 }
 
+#sum
+{
+	text-align : center;
+	background-color : #E1E1E1;
+	border-bottom : solid 1px #C1C1C1;
+}
+
 .frame
 {
 	width: 319px;
@@ -15,6 +22,7 @@ body
 	border-left: solid 1px #C1C1C1;
 	border-right: solid 1px #C1C1C1;
 	border-bottom: solid 1px #C1C1C1;
+	font-family: 'Ubuntu';
 }
 
 .calc-form
@@ -39,7 +47,6 @@ body
 	font-size: 18px;
 	color: white;
 	text-align: center;	
-	font-family: 'Ubuntu';
 	font-style : medium;
 	margin: 0;
 }
@@ -56,7 +63,6 @@ body
 	text-align: center;
 	font-size: 18px;
 	color: white;
-	font-family: 'Ubuntu';
 	font-style : medium;
 	background-color: #0088CC;
 	border-radius: 5px;

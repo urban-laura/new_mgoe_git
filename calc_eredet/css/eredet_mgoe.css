@@ -1,0 +1,156 @@
+.center
+{
+	padding : 31px; 
+}
+
+.motorkerekparok
+{
+	display : none;
+}
+
+.kisteherautok
+{
+	display : none;
+}
+
+.tehergepkocsi
+{
+	display : none;
+}
+
+.autobuszok
+{
+	display : none;
+}
+
+.mezogazdasagi
+{
+	display : none;
+}
+
+.potkocsi
+{
+	display : none;
+}
+
+h5
+{
+	padding-left: 20px;
+	margin: 0;
+}
+
+.ft
+{
+	vertical-align: top;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: right;
+}
+
+select
+{
+	font-weight : 400;
+	font-style : italic;
+	font-size : 14px;
+	padding-left : 12px;
+	height : 34px;
+	width : 257px;
+	color : #2D2D2D;
+}
+
+#sum
+{
+	padding-left: 31px;
+	padding-right: 31px;
+} 
+
+span.betu, h5
+{
+	font-weight : 400;
+	font-style : italic;
+	font-size : 14px;
+}
+
+h5
+{
+	padding-left: 16px;
+	margin: 0;
+}
+
+span.megnevezes
+{
+	font-style: regular;
+	font-size: 16px;
+}
+
+.m_megnevezes
+{
+	font-style: regular;
+	font-size: 16px;
+	text-align: center;
+	width: 150px;
+}
+
+table
+{
+	width: 257px;
+}
+
+.szemelygepjarmuvek table
+{
+	padding-top: 13px;
+	padding-bottom: 17px;
+}
+
+.motorkerekparok table
+{
+	padding-top: 22px;
+	padding-bottom: 17px;
+}
+
+.motorkerekparok td
+{
+	padding-bottom: 10px;
+}
+
+.kisteherautok table
+{
+	padding-top: 55px;
+	padding-bottom: 59px;
+}
+
+.tehergepkocsi td
+{
+	padding-bottom: 10px;
+}
+
+.tehergepkocsi table
+{
+	padding-top: 47px;
+	padding-bottom: 43px;
+}
+
+.autobuszok table
+{
+	padding-top: 34px;
+	padding-bottom: 38px;
+}
+
+.mezogazdasagi table
+{
+	padding-top: 54px;
+	padding-bottom: 58px;
+}
+
+.potkocsi table
+{
+	padding-top: 13px;
+	padding-bottom: 17px;
+}
+
+.ft_center
+{
+	font-weight: bold;
+	font-size: 16px;
+	text-align: right;
+}

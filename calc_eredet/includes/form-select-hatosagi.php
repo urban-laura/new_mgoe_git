@@ -1,6 +1,6 @@
 ﻿<?php
 
-$dijak_classes = array('-Válasszon-', 'Személygépjármű', 'Motorkerékpár', 'Kisteherautó (3,5t össztömegig)', 'Tehergépkocsi', 'Autóbusz', 'Mezőgazdasági vontató, lassú jármű', 'Pótkocsi');
+$dijak_classes = array('Személygépjármű', 'Motorkerékpár', 'Kisteherautó (3,5t össztömegig)', 'Tehergépkocsi', 'Autóbusz', 'Mezőgazdasági vontató, lassú jármű', 'Pótkocsi');
 
 $options = '';
 
