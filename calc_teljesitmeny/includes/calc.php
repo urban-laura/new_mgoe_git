@@ -29,8 +29,6 @@ else
 
 $year = $_POST['year'];
 $teljesitmeny = $_POST['teljesitmeny'];
-$kw = $_POST['kw'];
-$le = $_POST['le'];
 
 $n_year = (int)date('Y');
 

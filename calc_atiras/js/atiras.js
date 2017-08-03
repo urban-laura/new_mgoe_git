@@ -1,7 +1,29 @@
 $(document).ready(function(){
+
+	$('.slectOne').on('change', function() {
+         $('.slectOne').not(this).prop('checked', false);
+    })
+
+     $('.kw').click(function() {
+        $('.s_kw').addClass('active');
+        $('.s_kw').removeClass('inactive');
+        $('.s_le').addClass('inactive');
+        $('.s_le').removeClass('active');
+        $('.p_kw').addClass('p_active');
+        $('.p_le').removeClass('p_active');
+    })
+
+    $('.le').click(function() {
+        $('.s_le').addClass('active');
+        $('.s_le').removeClass('inactive');
+        $('.s_kw').addClass('inactive');
+        $('.s_kw').removeClass('active');
+        $('.p_le').addClass('p_active');
+        $('.p_kw').removeClass('p_active');
+    })
 	
 	$('#type').change(function(){
-		
+
 		if($('#type option:selected').text() == 'Személygépjármű')
 		{
 			$('#motorkerekpar').addClass('invisible');
@@ -16,6 +38,7 @@ $(document).ready(function(){
 			
 			$('#types').val('szemelygepjarmu');
 		}
+
 		
 		if($('#type option:selected').text() == 'Motorkerékpár')
 		{
@@ -46,6 +69,7 @@ $(document).ready(function(){
 			
 			$('#types').val('quad');
 		}
+
 		
 		if($('#type option:selected').text() == 'Kisteherautó (3,5t össztömegig)')
 		{
@@ -62,6 +86,7 @@ $(document).ready(function(){
 			$('#types').val('kisteherauto');
 		}
 		
+
 		if($('#type option:selected').text() == 'Tehergépkocsi')
 		{
 			$('#szemelygepjarmu').addClass('invisible');

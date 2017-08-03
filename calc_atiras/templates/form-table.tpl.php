@@ -1,9 +1,10 @@
 ﻿<head>
-<link rel='stylesheet' type='text/css' href='../calc_css/calc.css'>
-<link rel='stylesheet' type='text/css' href='css/atiras.css'>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu"/>
+	<link rel='stylesheet' type='text/css' href='../calc_css/calc###css-source###.css'>
+	<link rel='stylesheet' type='text/css' href='css/atiras###atiras-css-source###.css'>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="js/atiras.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/atiras.js"></script>
 </head>
 
 <body>
@@ -17,196 +18,206 @@
 
 <input type='hidden' name='types' id='types' value='###types###'>
 
-<div id='atiras'>
+<div class="center">
 
-<div class='type'>
-<select name='type' id='type'>
-	###type-options###
-</select>
-</div>
+	<div class='type'>
+		<h5>Gépjármű típusa:</h5>
+		<select name='type' id='type'>
+			###type-options###
+		</select>
+	</div>
 
 <!--Személygépjármű-->
 <div id='szemelygepjarmu' class='###visibility-szemelygepjarmu-class###'>
-<h4>
-Évjárat: 
-<select name='sz_year' class='date'>
-	###year-sz-options###
-</select>
-</h4>
 
-<h4>
-Teljesítmény: 
-<input type='number' name='sz_teljesitmeny' class='date power' value='###sz_teljesitmeny###'>
-<select name='sz_or' class='or'>
-	###or-sz-options###
-</select>
-</h4>
+	<h4>Gyártási év: 
+		<select name='sz_year' class="date ###year###">
+			<option value="0" disabled selected class='invisible'>Év</option>
+			###year-sz-options###
+		</select>
+	</h4>
 
-<div class='error'>
-<h3>###error###</h3>
-</div>
+	<select name='sz_barrel' class='barrel'>
+		<option value="0" disabled selected class='invisible'>Hengerűrtartalom</option>
+		###barrel-sz-options###
+	</select>
 
-<h4>
-Hengerűrtartalom: 
-<select name='sz_barrel' class='barrel'>
-	###barrel-sz-options###
-</select>
-</h4>
+	<input type='text' name='sz_teljesitmeny' id='power' class="###power###" value='###sz_teljesitmeny###' placeholder="Teljesítmény">
+
+	<p class="p_kw ###p-kw-visibility###">kW</p>
+	<label class="l_kw">
+		<input type="radio" name='sz_kw' class="kw slectOne" ###kw###>
+		<span class="s_kw ###kw-visibility###"></span>
+	</label>
+
+	<p class="p_le ###p-le-visibility###">LE</p>
+	<label class="l_le">
+		<input type="radio" name='sz_le' class="le slectOne" ###le###>
+		<span class="s_le ###le-visibility###"></span>
+	</label>
 </div>
 
 <!--Motorkerékpár-->
 <div id='motorkerekpar' class='###visibility-motorkerekpar-class###'>
-<h4>
-Évjárat: 
-<select name='m_year' class='date'>
-	###year-m-options###
-</select>
-</h4>
 
-<h4>
-Teljesítmény: 
-<input type='number' name='m_teljesitmeny' class='date power' value='###m_teljesitmeny###'>
-<select name='m_or' class='or'>
-	###or-m-options###
-</select>
-</h4>
+	<h4>Gyártási év: 
+		<select name='m_year' class="date ###year###">
+			<option value="0" disabled selected class='invisible'>Év</option>
+			###year-m-options###
+		</select>
+	</h4>
 
-<div class='error'>
-<h3>###error###</h3>
+	<select name='m_barrel' class='barrel'>
+		<option value="0" disabled selected class='invisible'>Hengerűrtartalom</option>
+		###barrel-m-options###
+	</select>
+
+	<input type='text' name='m_teljesitmeny' id='power' class="###power###" value='###m_teljesitmeny###' placeholder="Teljesítmény">
+
+	<p class="p_kw ###p-kw-visibility###">kW</p>
+	<label class="l_kw">
+		<input type="radio" name='m_kw' class="kw slectOne" ###kw###>
+		<span class="s_kw ###kw-visibility###"></span>
+	</label>
+
+	<p class="p_le ###p-le-visibility###">LE</p>
+	<label class="l_le">
+		<input type="radio" name='m_le' class="le slectOne" ###le###>
+		<span class="s_le ###le-visibility###"></span>
+	</label>
 </div>
 
-<h4>
-Hengerűrtartalom: 
-<select name='m_barrel' class='barrel'>
-	###barrel-m-options###
-</select>
-</h4>
-</div>
 
 <!--Quad-->
 <div id='quad' class='###visibility-quad-class###'>
-<h4>
-Évjárat: 
-<select name='q_year' class='date'>
-	###year-q-options###
-</select>
-</h4>
 
-<h4>
-Teljesítmény: 
-<input type='number' name='q_teljesitmeny' class='date power' value='###q_teljesitmeny###'>
-<select name='q_or' class='or'>
-	###or-q-options###
-</select>
-</h4>
+	<h6>Gyártási év: 
+		<select name='q_year' class="date ###year###">
+			<option value="0" disabled selected class='invisible'>Év</option>
+			###year-q-options###
+		</select>
+	</h6>
 
-<div class='error'>
-<h3>###error###</h3>
-</div>
+	<input type='text' name='q_teljesitmeny' id='power' class="###power###" value='###q_teljesitmeny###' placeholder="Teljesítmény">
+
+	<p id="p_kw" class="###p-kw-visibility###">kW</p>
+	<label class="kw">
+		<input type="radio" name='q_kw' class="kw slectOne" ###kw###>
+		<span id="kw" class="###kw-visibility###"></span>
+	</label>
+
+	<p id="p_le" class="###p-le-visibility###">LE</p>
+	<label class="le">
+		<input type="radio" name='q_le' class="le slectOne" ###le###>
+		<span id="le" class="###le-visibility###"></span>
+	</label>
 </div>
 
 <!--Kisteherautó (3,5t össztömegig)-->
 <div id='kisteherauto' class='###visibility-kisteherauto-class###'>
-<h4>
-Évjárat: 
-<select name='k_year' class='date'>
-	###year-k-options###
-</select>
-</h4>
 
-<h4>
-Teljesítmény: 
-<input type='number' name='k_teljesitmeny' class='date power' value='###k_teljesitmeny###'>
-<select name='k_or' class='or'>
-	###or-k-options###
-</select>
-</h4>
+<h6>Gyártási év: 
+		<select name='k_year' class="date ###year###">
+			<option value="0" disabled selected class='invisible'>Év</option>
+			###year-k-options###
+		</select>
+	</h6>
 
-<div class='error'>
-<h3>###error###</h3>
-</div>
+	<input type='text' name='k_teljesitmeny' id='power' class="###power###" value='###k_teljesitmeny###' placeholder="Teljesítmény">
+
+	<p id="p_kw" class="###p-kw-visibility###">kW</p>
+	<label class="kw">
+		<input type="radio" name='k_kw' class="kw slectOne" ###kw###>
+		<span id="kw" class="###kw-visibility###"></span>
+	</label>
+
+	<p id="p_le" class="###p-le-visibility###">LE</p>
+	<label class="le">
+		<input type="radio" name='k_le' class="le slectOne" ###le###>
+		<span id="le" class="###le-visibility###"></span>
+	</label>
 </div>
 
 <!--Tehergépkocsi-->
 <div id='tehergepkocsi' class='###visibility-tehergepkocsi-class###'>
-<h4>
-Évjárat: 
-<select name='t_year' class='date'>
-	###year-t-options###
-</select>
-</h4>
 
-<h4>
-Teljesítmény: 
-<input type='number' name='t_teljesitmeny' class='date power' value='###t_teljesitmeny###'>
-<select name='t_or' class='or'>
-	###or-t-options###
-</select>
-</h4>
+	<h4>Gyártási év: 
+		<select name='t_year' class="date ###year###">
+			<option value="0" disabled selected class='invisible'>Év</option>
+			###year-t-options###
+		</select>
+	</h4>
 
-<div class='error'>
-<h3>###error###</h3>
-</div>
+	<select name='tomeg' class='barrel'>
+		<option value="0" disabled selected class='invisible'>Össztömeg</option>
+		###tomeg-options###
+	</select>
 
-<h4>
-Össztömeg: 
-<select name='tomeg' class='barrel'>
-	###tomeg-options###
-</select>
-</h4>
+	<input type='text' name='t_teljesitmeny' id='power' class="###power###" value='###t_teljesitmeny###' placeholder="Teljesítmény">
+
+	<p id="p_kw" class="###p-kw-visibility###">kW</p>
+	<label class="kw">
+		<input type="radio" name='t_kw' class="kw slectOne" ###kw###>
+		<span id="kw" class="###kw-visibility###"></span>
+	</label>
+
+	<p id="p_le" class="###p-le-visibility###">LE</p>
+	<label class="le">
+		<input type="radio" name='t_le' class="le slectOne" ###le###>
+		<span id="le" class="###le-visibility###"></span>
+	</label>
+
 </div>
 
 <!--Autóbusz-->
 <div id='autobusz' class='###visibility-autobusz-class###'>
-<h4>
-Évjárat: 
-<select name='a_year' class='date'>
-	###year-a-options###
-</select>
-</h4>
 
-<h4>
-Teljesítmény: 
-<input type='number' name='a_teljesitmeny' class='date power' value='###a_teljesitmeny###'>
-<select name='a_or' class='or'>
-	###or-a-options###
-</select>
-</h4>
+	<h4>Gyártási év: 
+		<select name='a_year' class="date ###year###">
+			<option value="0" disabled selected class='invisible'>Év</option>
+			###year-a-options###
+		</select>
+	</h4>
 
-<div class='error'>
-<h3>###error###</h3>
-</div>
+	<select name='szem_szam' class='barrel'>
+		<option value="0" disabled selected class='invisible'>Szállítható személyek száma</option>
+		###szem-szam-options###
+	</select>
 
-<h4>
-Szállítható személyek száma: 
-<select name='szem_szam' class='barrel'>
-	###szem-szam-options###
-</select>
-</h4>
+	<input type='text' name='a_teljesitmeny' id='power' class="###power###" value='###a_teljesitmeny###' placeholder="Teljesítmény">
+
+	<p id="p_kw" class="###p-kw-visibility###">kW</p>
+	<label class="kw">
+		<input type="radio" name='a_kw' class="kw slectOne" ###kw###>
+		<span id="kw" class="###kw-visibility###"></span>
+	</label>
+
+	<p id="p_le" class="###p-le-visibility###">LE</p>
+	<label class="le">
+		<input type="radio" name='a_le' class="le slectOne" ###le###>
+		<span id="le" class="###le-visibility###"></span>
+	</label>
 </div>
 
 <!--Pótkocsi-->
 <div id='potkocsi' class='###visibility-potkocsi-class###'>
-<h4>
-Össztömeg:
-<select name='p_tomeg' class='barrel'>
-	###tomeg-p-options###
-</select>
-</h4>
 
-<h4>
-Kategória:
-<select name='kategoria' class='kategoria'>
-	###kategoria-options###
-</select>
-</h4>
+	<select name='p_tomeg' class='tomeg'>
+		<option value="0" disabled selected class='invisible'>Össztömeg</option>
+		###tomeg-p-options###
+	</select>
+
+	<select name='kategoria' class='barrel'>
+		<option value="0" disabled selected class='invisible'>Kategória</option>
+		###kategoria-options###
+	</select>
 </div>
 
 </div>
 
 <div class='submit'>
 <input type='hidden' value='submitted' name='submitted'>
-<input type='submit' id='submit' value='Számol' class='form-submit'>
+<input type='submit' id='submit' value='Számold ki!' class='form-submit'>
 </div>
 
 </form>
@@ -243,5 +254,7 @@ Kategória:
 </table>
 </div>	
 	
+<div id="zero">
+</div>	
 </div>
 </body>

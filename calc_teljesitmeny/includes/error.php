@@ -1,14 +1,22 @@
 <?php
-$message = '';
-
-if(isset($_POST['submitted']) && $_POST['teljesitmeny'] == '')
+if(isset($_POST['submitted']))
 {
-	$message = 'Nem adta meg az autója teljesítményét.';
+	if($year == null)
+	{
+		$output = str_replace('###year###', 'validation-error', $output);
+	}
+
+	if($teljesitmeny == null)
+	{
+		$output = str_replace('###power###', 'validation-error', $output);
+	}
 }
 
-if(isset($_POST['teljesitmeny']) && $_POST['teljesitmeny'] != '' && $_POST['teljesitmeny'] < 16)
+$message = '';
+
+if(isset($_POST['submitted']) && ($year == null || $teljesitmeny == null))
 {
-	$message = 'Túl kicsi a teljesítmény.';
+	$message = '<ul><li>Kérem, töltse ki az összes mezőt.</li></ul>';
 }
 
 $output = str_replace('###error###', $message, $output);

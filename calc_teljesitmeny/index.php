@@ -11,9 +11,11 @@ include('includes/form-teljesitmeny.php');
 
 include('includes/calc.php');
 
+include('includes/error-visibility.php');
+
 include('includes/error.php');
 
-//include('includes/sum-visibility.php');
+include('includes/sum-visibility.php');
 
 include('includes/sum.php');
 

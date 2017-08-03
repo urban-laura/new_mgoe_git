@@ -19,33 +19,36 @@
 			<h4>###sum### Ft</h4>
 		</div>	
 
+		<div id='error' class='###error-visibility###'>
+			<h5>###error###</h5>
+  		</div>
+
 		<form name='calculator' method='post' class='calc-form'>
 
 			<div class='center'>
 
 				<h4>Gyártási év: 
-				<select name='year' id='year'>
+				<select name='year' id='year' class="###year###">
 					<option value="0" disabled selected class='invisible'>Év</option>
 					###year-options###
 				</select>
 				</h4>
 
-				<input type='text' name='teljesitmeny' id='power' value='###teljesitmeny###' placeholder="Teljesítmény">
+				<input type='text' name='teljesitmeny' id='power' class="###power###" value='###teljesitmeny###' placeholder="Teljesítmény">
+
+					<p id="p_kw" class="###p-kw-visibility###">kW</p>
 					<label class="kw">
-						<input type="checkbox" name='kw' class="slectOne" ###kw###>
-						<span></span>
+						<input type="radio" name='kw' class="kw slectOne" ###kw###>
+						<span id="kw" class="###kw-visibility###"></span>
 					</label>
-					<p>kW</p>
 
+
+					<p id="p_le" class="###p-le-visibility###">LE</p>
 					<label class="le">
-						<input type="checkbox" name='le' class="slectOne" ###le###>LE
-						<span></span>
+						<input type="radio" name='le' class="le slectOne" ###le###>
+						<span id="le" class="###le-visibility###"></span>
 					</label>
-			
-				<div id='error'>
-					<h4>###error###</h4>
-				</div>
-
+		
 			</div>
 
 			<div class='submit'>

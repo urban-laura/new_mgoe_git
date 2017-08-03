@@ -1,10 +1,58 @@
 <?php
+
+// choose right css
+if(isset($_GET['css'])) 
+{
+	if (file_exists('../calc_css/calc_' . $_GET['css'] . '.css')) 
+	{
+	  $output = str_replace('###css-source###', '_' . $_GET['css'], $output);
+	}
+	else 
+	{
+		$output = str_replace('###css-source###', '', $output);
+	}
+	
+	if (file_exists('css/atiras_' . $_GET['css'] . '.css')) 
+	{
+	  $output = str_replace('###atiras-css-source###', '_' . $_GET['css'], $output);
+	}
+	else 
+	{
+		$output = str_replace('###atiras-css-source###', '', $output);
+	}
+}
+else 
+{
+	$output = str_replace('###atiras-css-source###', '', $output);
+	$output = str_replace('###css-source###', '', $output);
+}
+
+$year = $_POST['sz_year'];
+$teljesitmeny = $_POST['sz_teljesitmeny'];
+$barrel = $_POST['sz_barrel'];
+$c_kw = $_POST['sz_kw'];
+$c_le = $_POST['sz_le'];
+
+$hatosagi_dijak[] = array('barrel'=>'<=1400',      'value'=>17000);
+$hatosagi_dijak[] = array('barrel'=>'1401 - 2000', 'value'=>18500);
+$hatosagi_dijak[] = array('barrel'=>'>=2001',      'value'=>20000);
+
+foreach($hatosagi_dijak as $dij)
+{
+	if($barrel==$dij['barrel'])
+	{
+		$hatosagi_dij = $dij['value'];
+		break;
+	}
+}
+
 if($_POST['type'] == 'Személygépjármű')
 {
 	$year = $_POST['sz_year'];
 	$teljesitmeny = $_POST['sz_teljesitmeny'];
-	$or = $_POST['sz_or'];
 	$barrel = $_POST['sz_barrel'];
+	$c_kw = $_POST['sz_kw'];
+	$c_le = $_POST['sz_le'];
 
 	$hatosagi_dijak[] = array('barrel'=>'<=1400',      'value'=>17000);
 	$hatosagi_dijak[] = array('barrel'=>'1401 - 2000', 'value'=>18500);
@@ -24,8 +72,9 @@ if($_POST['type'] == 'Motorkerékpár')
 {
 	$year = $_POST['m_year'];
 	$teljesitmeny = $_POST['m_teljesitmeny'];
-	$or = $_POST['m_or'];
 	$barrel = $_POST['m_barrel'];
+	$c_kw = $_POST['m_kw'];
+	$c_le = $_POST['m_le'];
 
 	$hatosagi_dijak[] = array('barrel'=>'<=500', 'value'=>15500);
 	$hatosagi_dijak[] = array('barrel'=>'>500',  'value'=>17000);
@@ -44,7 +93,8 @@ if($_POST['type'] == 'Quad (négykerekű segédmotoros kerékpár)')
 {
 	$year = $_POST['q_year'];
 	$teljesitmeny = $_POST['q_teljesitmeny'];
-	$or = $_POST['q_or'];
+	$c_kw = $_POST['q_kw'];
+	$c_le = $_POST['q_le'];
 	
 	$hatosagi_dij = 14000;
 }
@@ -53,7 +103,8 @@ if($_POST['type'] == 'Kisteherautó (3,5t össztömegig)')
 {
 	$year = $_POST['k_year'];
 	$teljesitmeny = $_POST['k_teljesitmeny'];
-	$or = $_POST['k_or'];
+	$c_kw = $_POST['k_kw'];
+	$c_le = $_POST['k_le'];
 	
 	$hatosagi_dij = 20000;
 }
@@ -62,8 +113,9 @@ if($_POST['type'] == 'Tehergépkocsi')
 {
 	$year = $_POST['t_year'];
 	$teljesitmeny = $_POST['t_teljesitmeny'];
-	$or = $_POST['t_or'];
 	$tomeg = $_POST['tomeg'];
+	$c_kw = $_POST['t_kw'];
+	$c_le = $_POST['t_le'];
 
 	$hatosagi_dijak[] = array('tomeg'=>'3,5t - 7,5t', 'value'=>21000);
 	$hatosagi_dijak[] = array('tomeg'=>'>7,5t',       'value'=>22000);
@@ -82,8 +134,9 @@ if($_POST['type'] == 'Autóbusz')
 {
 	$year = $_POST['a_year'];
 	$teljesitmeny = $_POST['a_teljesitmeny'];
-	$or = $_POST['a_or'];
 	$szem_szam = $_POST['szem_szam'];
+	$c_kw = $_POST['a_kw'];
+	$c_le = $_POST['a_le'];
 
 	$hatosagi_dijak[] = array('szem_szam'=>'<=20', 'value'=>21000);
 	$hatosagi_dijak[] = array('szem_szam'=>'>20',  'value'=>22000);
@@ -119,14 +172,14 @@ if($_POST['type'] == 'Pótkocsi')
 $n_year = (int)date('Y');
 $c_year = $n_year - $year;
 
-if($or == 'kW')
+if(isset($c_kw))
 {
-$kw = $teljesitmeny;
+	$kw = $teljesitmeny;
 }
 
-if($or == 'LE')
+if(isset($c_le))
 {
-$kw = $teljesitmeny * 0.745;
+	$kw = $teljesitmeny * 0.745;
 }
 
 

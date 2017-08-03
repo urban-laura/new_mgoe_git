@@ -106,3 +106,77 @@ li
 {
 	padding-left : 15px;
 }
+
+label, p
+{
+	float: right;
+}
+
+p
+{
+	font-size: 14px;
+	font-style: italic;
+	margin-bottom: 0px;
+}
+
+.p_active
+{
+	color: #0088CC;
+	font-weight: bold;
+}
+
+.active 
+{
+	background-image: url('../images/active.png');
+	background-repeat : no-repeat;
+	background-size : contain; 
+	background-position : center center;
+    border: solid 1px #0088CC;
+}
+
+.inactive
+{
+	background-color: white;
+    border: solid 1px #C1C1C1;
+}
+
+.kw input, .le input
+{
+    position: relative;
+    z-index: -9999;
+}
+
+.kw span, .le span 
+{
+    width: 23px;
+    height: 23px;
+    display: block;
+    border-radius: 5px;
+}
+
+.kw span:hover, .le span:hover
+{
+   
+    background-color: #0088CC;
+    border: solid 1px #0088CC;
+}
+
+.slectOne
+{
+	margin: 0;
+}
+
+#p_kw, #p_le
+{
+	margin-left: 5px;
+}
+
+#p_le
+{
+	margin-right: 15px;
+}
+
+#p_kw
+{
+	margin-right: 4px; 
+}

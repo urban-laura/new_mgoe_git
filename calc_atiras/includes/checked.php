@@ -1,4 +1,5 @@
 <?php
+
 $kw_value = '';
 $le_value = '';
 
@@ -18,7 +19,7 @@ if (!isset($_POST['submitted']))
 	$p_kw_visibility = '';
 }
 
-if (isset($_POST['kw'])) 
+if (isset($c_kw)) 
 {
 	$kw_value = 'checked';
 	$le_value = '';
@@ -28,7 +29,7 @@ if (isset($_POST['kw']))
 	$p_le_visibility = '';
 }
 
-if (isset($_POST['le'])) 
+if (isset($c_le)) 
 {
 	$le_value = 'checked';
 	$kw_value = '';

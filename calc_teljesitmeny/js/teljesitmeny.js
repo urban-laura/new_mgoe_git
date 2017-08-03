@@ -4,6 +4,24 @@ $(document).ready(function(){
          $('.slectOne').not(this).prop('checked', false);
     })
 
+     $('.kw').click(function() {
+        $('#kw').addClass('active');
+        $('#kw').removeClass('inactive');
+        $('#le').addClass('inactive');
+        $('#le').removeClass('active');
+        $('#p_kw').addClass('p_active');
+        $('#p_le').removeClass('p_active');
+    })
+
+    $('.le').click(function() {
+        $('#le').addClass('active');
+        $('#le').removeClass('inactive');
+        $('#kw').addClass('inactive');
+        $('#kw').removeClass('active');
+        $('#p_le').addClass('p_active');
+        $('#p_kw').removeClass('p_active');
+    })
+
 	 $('#power').keydown(function (e) {
         // Allow: backspace, delete, tab, escape, enter and .
         if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
