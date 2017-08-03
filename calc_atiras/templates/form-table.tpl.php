@@ -14,6 +14,38 @@
 <h1>Gépjármű átírás</h1>
 </div>
 
+<div id='sum' class='###sum-visibility###'>	
+	<table>
+		<tr>
+			<td class='title2'>Vagyonszerzési illeték:</td>
+			<td class='value'><span class="vagyon">###vagyonszerzesi###</span> Ft</td>
+		</tr>
+
+		<tr>
+			<td class='title2'>Új forgalmi engedély:</td>
+			<td class='value'>+ <span class="forgalmi">###forgalmi###</span> Ft</td>
+		</tr>
+
+		<tr>
+			<td class='title2'>Törzskönyv:</td>
+			<td class='value'>+ <span class="torzskonyv">###torzskonyv###</span> Ft</td>
+		</tr>
+
+		<tr>
+			<td class='title2'>Eredetvizsga:</td>
+			<td class='value hr'>+ <span class="hatosagi">###hatosagi_dij###</span> Ft</td>
+		</tr>
+
+		<tr>
+			<td colspan="2" class='value'><span class="sum">###sum###</span> Ft</td>
+		</tr>
+	</table>
+</div>	
+
+<div id='error' class='###error-visibility###'>
+	<h5>###error###</h5>
+</div>
+
 <form name='calculator' method='post' class='calc-form'>
 
 <input type='hidden' name='types' id='types' value='###types###'>
@@ -31,29 +63,29 @@
 <div id='szemelygepjarmu' class='###visibility-szemelygepjarmu-class###'>
 
 	<h4>Gyártási év: 
-		<select name='sz_year' class="date ###year###">
+		<select name='sz_year' class="error_color date ###year###">
 			<option value="0" disabled selected class='invisible'>Év</option>
 			###year-sz-options###
 		</select>
 	</h4>
 
-	<select name='sz_barrel' class='barrel'>
+	<select name='sz_barrel' class='error_color ###barrel###'>
 		<option value="0" disabled selected class='invisible'>Hengerűrtartalom</option>
 		###barrel-sz-options###
 	</select>
 
-	<input type='text' name='sz_teljesitmeny' id='power' class="###power###" value='###sz_teljesitmeny###' placeholder="Teljesítmény">
+	<input type='text' name='sz_teljesitmeny' id='power' class="error_color ###power###" value='###sz_teljesitmeny###' placeholder="Teljesítmény">
 
-	<p class="p_kw ###p-kw-visibility###">kW</p>
-	<label class="l_kw">
+	<p id="p_kw" class="p_kw ###p-kw-visibility###">kW</p>
+	<label class="kw">
 		<input type="radio" name='sz_kw' class="kw slectOne" ###kw###>
-		<span class="s_kw ###kw-visibility###"></span>
+		<span id="kw" class="s_kw ###kw-visibility###"></span>
 	</label>
 
-	<p class="p_le ###p-le-visibility###">LE</p>
-	<label class="l_le">
+	<p id="p_le" class="p_le ###p-le-visibility###">LE</p>
+	<label class="le">
 		<input type="radio" name='sz_le' class="le slectOne" ###le###>
-		<span class="s_le ###le-visibility###"></span>
+		<span id="le" class="s_le ###le-visibility###"></span>
 	</label>
 </div>
 
@@ -61,29 +93,29 @@
 <div id='motorkerekpar' class='###visibility-motorkerekpar-class###'>
 
 	<h4>Gyártási év: 
-		<select name='m_year' class="date ###year###">
+		<select name='m_year' class="error_color date ###year###">
 			<option value="0" disabled selected class='invisible'>Év</option>
 			###year-m-options###
 		</select>
 	</h4>
 
-	<select name='m_barrel' class='barrel'>
+	<select name='m_barrel' class='error_color ###barrel###'>
 		<option value="0" disabled selected class='invisible'>Hengerűrtartalom</option>
 		###barrel-m-options###
 	</select>
 
-	<input type='text' name='m_teljesitmeny' id='power' class="###power###" value='###m_teljesitmeny###' placeholder="Teljesítmény">
+	<input type='text' name='m_teljesitmeny' id='power' class="error_color ###power###" value='###m_teljesitmeny###' placeholder="Teljesítmény">
 
-	<p class="p_kw ###p-kw-visibility###">kW</p>
-	<label class="l_kw">
+	<p id="p_kw" class="p_kw ###p-kw-visibility###">kW</p>
+	<label class="kw">
 		<input type="radio" name='m_kw' class="kw slectOne" ###kw###>
-		<span class="s_kw ###kw-visibility###"></span>
+		<span id="kw" class="s_kw ###kw-visibility###"></span>
 	</label>
 
-	<p class="p_le ###p-le-visibility###">LE</p>
-	<label class="l_le">
+	<p id="p_le" class="p_le ###p-le-visibility###">LE</p>
+	<label class="le">
 		<input type="radio" name='m_le' class="le slectOne" ###le###>
-		<span class="s_le ###le-visibility###"></span>
+		<span id="le" class="s_le ###le-visibility###"></span>
 	</label>
 </div>
 
@@ -92,24 +124,24 @@
 <div id='quad' class='###visibility-quad-class###'>
 
 	<h6>Gyártási év: 
-		<select name='q_year' class="date ###year###">
+		<select name='q_year' class="error_color date ###year###">
 			<option value="0" disabled selected class='invisible'>Év</option>
 			###year-q-options###
 		</select>
 	</h6>
 
-	<input type='text' name='q_teljesitmeny' id='power' class="###power###" value='###q_teljesitmeny###' placeholder="Teljesítmény">
+	<input type='text' name='q_teljesitmeny' id='power' class="error_color ###power###" value='###q_teljesitmeny###' placeholder="Teljesítmény">
 
-	<p id="p_kw" class="###p-kw-visibility###">kW</p>
+	<p id="p_kw" class="p_kw ###p-kw-visibility###">kW</p>
 	<label class="kw">
 		<input type="radio" name='q_kw' class="kw slectOne" ###kw###>
-		<span id="kw" class="###kw-visibility###"></span>
+		<span id="kw" class="s_kw ###kw-visibility###"></span>
 	</label>
 
-	<p id="p_le" class="###p-le-visibility###">LE</p>
+	<p id="p_le" class="p_le ###p-le-visibility###">LE</p>
 	<label class="le">
 		<input type="radio" name='q_le' class="le slectOne" ###le###>
-		<span id="le" class="###le-visibility###"></span>
+		<span id="le" class="s_le ###le-visibility###"></span>
 	</label>
 </div>
 
@@ -117,24 +149,24 @@
 <div id='kisteherauto' class='###visibility-kisteherauto-class###'>
 
 <h6>Gyártási év: 
-		<select name='k_year' class="date ###year###">
+		<select name='k_year' class="error_color date ###year###">
 			<option value="0" disabled selected class='invisible'>Év</option>
 			###year-k-options###
 		</select>
 	</h6>
 
-	<input type='text' name='k_teljesitmeny' id='power' class="###power###" value='###k_teljesitmeny###' placeholder="Teljesítmény">
+	<input type='text' name='k_teljesitmeny' id='power' class="error_color ###power###" value='###k_teljesitmeny###' placeholder="Teljesítmény">
 
-	<p id="p_kw" class="###p-kw-visibility###">kW</p>
+	<p id="p_kw" class="p_kw ###p-kw-visibility###">kW</p>
 	<label class="kw">
 		<input type="radio" name='k_kw' class="kw slectOne" ###kw###>
-		<span id="kw" class="###kw-visibility###"></span>
+		<span id="kw" class="s_kw ###kw-visibility###"></span>
 	</label>
 
-	<p id="p_le" class="###p-le-visibility###">LE</p>
+	<p id="p_le" class="p_le ###p-le-visibility###">LE</p>
 	<label class="le">
 		<input type="radio" name='k_le' class="le slectOne" ###le###>
-		<span id="le" class="###le-visibility###"></span>
+		<span id="le" class="s_le ###le-visibility###"></span>
 	</label>
 </div>
 
@@ -142,29 +174,29 @@
 <div id='tehergepkocsi' class='###visibility-tehergepkocsi-class###'>
 
 	<h4>Gyártási év: 
-		<select name='t_year' class="date ###year###">
+		<select name='t_year' class="error_color date ###year###">
 			<option value="0" disabled selected class='invisible'>Év</option>
 			###year-t-options###
 		</select>
 	</h4>
 
-	<select name='tomeg' class='barrel'>
+	<select name='tomeg' class='error_color ###tomeg###'>
 		<option value="0" disabled selected class='invisible'>Össztömeg</option>
 		###tomeg-options###
 	</select>
 
-	<input type='text' name='t_teljesitmeny' id='power' class="###power###" value='###t_teljesitmeny###' placeholder="Teljesítmény">
+	<input type='text' name='t_teljesitmeny' id='power' class="error_color ###power###" value='###t_teljesitmeny###' placeholder="Teljesítmény">
 
-	<p id="p_kw" class="###p-kw-visibility###">kW</p>
+	<p id="p_kw" class="p_kw ###p-kw-visibility###">kW</p>
 	<label class="kw">
 		<input type="radio" name='t_kw' class="kw slectOne" ###kw###>
-		<span id="kw" class="###kw-visibility###"></span>
+		<span id="kw" class="s_kw ###kw-visibility###"></span>
 	</label>
 
-	<p id="p_le" class="###p-le-visibility###">LE</p>
+	<p id="p_le" class="p_le ###p-le-visibility###">LE</p>
 	<label class="le">
 		<input type="radio" name='t_le' class="le slectOne" ###le###>
-		<span id="le" class="###le-visibility###"></span>
+		<span id="le" class="s_le ###le-visibility###"></span>
 	</label>
 
 </div>
@@ -173,41 +205,41 @@
 <div id='autobusz' class='###visibility-autobusz-class###'>
 
 	<h4>Gyártási év: 
-		<select name='a_year' class="date ###year###">
+		<select name='a_year' class="error_color date ###year###">
 			<option value="0" disabled selected class='invisible'>Év</option>
 			###year-a-options###
 		</select>
 	</h4>
 
-	<select name='szem_szam' class='barrel'>
+	<select name='szem_szam' class='error_color ###szem-szam###'>
 		<option value="0" disabled selected class='invisible'>Szállítható személyek száma</option>
 		###szem-szam-options###
 	</select>
 
-	<input type='text' name='a_teljesitmeny' id='power' class="###power###" value='###a_teljesitmeny###' placeholder="Teljesítmény">
+	<input type='text' name='a_teljesitmeny' id='power' class="error_color ###power###" value='###a_teljesitmeny###' placeholder="Teljesítmény">
 
-	<p id="p_kw" class="###p-kw-visibility###">kW</p>
+	<p id="p_kw" class="p_kw ###p-kw-visibility###">kW</p>
 	<label class="kw">
 		<input type="radio" name='a_kw' class="kw slectOne" ###kw###>
-		<span id="kw" class="###kw-visibility###"></span>
+		<span id="kw" class="s_kw ###kw-visibility###"></span>
 	</label>
 
-	<p id="p_le" class="###p-le-visibility###">LE</p>
+	<p id="p_le" class="p_le ###p-le-visibility###">LE</p>
 	<label class="le">
 		<input type="radio" name='a_le' class="le slectOne" ###le###>
-		<span id="le" class="###le-visibility###"></span>
+		<span id="le" class="s_le ###le-visibility###"></span>
 	</label>
 </div>
 
 <!--Pótkocsi-->
 <div id='potkocsi' class='###visibility-potkocsi-class###'>
 
-	<select name='p_tomeg' class='tomeg'>
+	<select name='p_tomeg' class='tomeg error_color ###tomeg###'>
 		<option value="0" disabled selected class='invisible'>Össztömeg</option>
 		###tomeg-p-options###
 	</select>
 
-	<select name='kategoria' class='barrel'>
+	<select name='kategoria' class='error_color ###kategoria###'>
 		<option value="0" disabled selected class='invisible'>Kategória</option>
 		###kategoria-options###
 	</select>
@@ -221,38 +253,6 @@
 </div>
 
 </form>
-
-<div id='sum' class='###sum-visibility###'>	
-
-<h3>Kiszámolt költségek</h3>
-
-<table>
-<tr>
-<td class='title2'>Vagyonszerzési illeték:</td>
-<td class='value vagyon'>###vagyonszerzesi### Ft</td>
-</tr>
-
-<tr>
-<td class='title2'>Új forgalmi engedély:</td>
-<td class='value forgalmi'>###forgalmi### Ft</td>
-</tr>
-
-<tr>
-<td class='title2'>Törzskönyv:</td>
-<td class='value torzskonyv'>###torzskonyv### Ft</td>
-</tr>
-
-<tr>
-<td class='title2'>Eredetvizsga:</td>
-<td class='value hatosagi'>###hatosagi_dij### Ft</td>
-</tr>
-
-<tr>
-<td class='title2'>ÖSSZESEN FIZETENDŐ:</td>
-<td class='value sum'>###sum### Ft</td>
-</tr>
-</table>
-</div>	
 	
 <div id="zero">
 </div>	

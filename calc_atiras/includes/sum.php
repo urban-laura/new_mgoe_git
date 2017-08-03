@@ -1,9 +1,9 @@
 <?php
-$vagyonszerzesi_value = '';
-$forgalmi_value = '';
-$torzskonyv_value = '';
-$hatosagi_dij_value = '';
-$sum_value = '';
+$vagyonszerzesi_value = 0;
+$forgalmi_value = 0;
+$torzskonyv_value = 0;
+$hatosagi_dij_value = 0;
+$sum_value = 0;
 
 if(isset($_POST['submitted']) && ($teljesitmeny != '' || $types == 'potkocsi'))
 {
@@ -12,15 +12,6 @@ if(isset($_POST['submitted']) && ($teljesitmeny != '' || $types == 'potkocsi'))
 	$torzskonyv_value = $debug['torzskonyv'];
 	$hatosagi_dij_value = $debug['hatosagi_dij'];
 	$sum_value = $debug['sum'];
-}
-
-else
-{
-	$vagyonszerzesi_value = '';
-	$forgalmi_value = '';
-	$torzskonyv_value = '';
-	$hatosagi_dij_value = '';
-	$sum_value = '';
 }
 
 $output = str_replace('###vagyonszerzesi###', $vagyonszerzesi_value, $output);

@@ -24,6 +24,26 @@ $(document).ready(function(){
 	
 	$('#type').change(function(){
 
+		$('.sum').html('0');
+		$('.hatosagi').html('0');
+		$('.torzskonyv').html('0');
+		$('.forgalmi').html('0');
+		$('.vagyon').html('0');
+
+		$('.s_le').addClass('active');
+       	$('.s_le').removeClass('inactive');
+        $('.s_kw').addClass('inactive');
+        $('.s_kw').removeClass('active');
+        $('.p_le').addClass('p_active');
+        $('.p_kw').removeClass('p_active');
+
+        $('.le').prop('checked', true);
+        $('.kw').prop('checked', false);
+
+        $('.error_color').removeClass('validation-error');
+		$('#sum').removeClass('invisible');
+		$('#error').addClass('invisible');
+
 		if($('#type option:selected').text() == 'Személygépjármű')
 		{
 			$('#motorkerekpar').addClass('invisible');
@@ -32,8 +52,6 @@ $(document).ready(function(){
 			$('#tehergepkocsi').addClass('invisible');
 			$('#autobusz').addClass('invisible');
 			$('#potkocsi').addClass('invisible');
-			$('.error').addClass('invisible');
-			$('#sum').addClass('invisible');
 			$('#szemelygepjarmu').removeClass('invisible');
 			
 			$('#types').val('szemelygepjarmu');
@@ -48,8 +66,6 @@ $(document).ready(function(){
 			$('#tehergepkocsi').addClass('invisible');
 			$('#autobusz').addClass('invisible');
 			$('#potkocsi').addClass('invisible');
-			$('.error').addClass('invisible');
-			$('#sum').addClass('invisible');
 			$('#motorkerekpar').removeClass('invisible');
 			
 			$('#types').val('motorkerekpar');
@@ -63,8 +79,6 @@ $(document).ready(function(){
 			$('#tehergepkocsi').addClass('invisible');
 			$('#autobusz').addClass('invisible');
 			$('#potkocsi').addClass('invisible');
-			$('.error').addClass('invisible');
-			$('#sum').addClass('invisible');
 			$('#quad').removeClass('invisible');
 			
 			$('#types').val('quad');
@@ -79,8 +93,6 @@ $(document).ready(function(){
 			$('#tehergepkocsi').addClass('invisible');
 			$('#autobusz').addClass('invisible');
 			$('#potkocsi').addClass('invisible');
-			$('.error').addClass('invisible');
-			$('#sum').addClass('invisible');
 			$('#kisteherauto').removeClass('invisible');
 			
 			$('#types').val('kisteherauto');
@@ -95,8 +107,6 @@ $(document).ready(function(){
 			$('#kisteherauto').addClass('invisible');
 			$('#autobusz').addClass('invisible');
 			$('#potkocsi').addClass('invisible');
-			$('.error').addClass('invisible');
-			$('#sum').addClass('invisible');
 			$('#tehergepkocsi').removeClass('invisible');
 			
 			$('#types').val('tehergepkocsi');
@@ -110,8 +120,6 @@ $(document).ready(function(){
 			$('#kisteherauto').addClass('invisible');
 			$('#tehergepkocsi').addClass('invisible');
 			$('#potkocsi').addClass('invisible');
-			$('.error').addClass('invisible');
-			$('#sum').addClass('invisible');
 			$('#autobusz').removeClass('invisible');
 			
 			$('#types').val('autobusz');
@@ -125,8 +133,6 @@ $(document).ready(function(){
 			$('#kisteherauto').addClass('invisible');
 			$('#tehergepkocsi').addClass('invisible');
 			$('#autobusz').addClass('invisible');
-			$('.error').addClass('invisible');
-			$('#sum').addClass('invisible');
 			$('#potkocsi').removeClass('invisible');
 			
 			$('#types').val('potkocsi');
