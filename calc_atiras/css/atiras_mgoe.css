@@ -116,6 +116,12 @@ label
 	font-size: 36px;
 }
 
+.value_sum
+{
+	font-weight : bold;
+	font-size: 36px;
+}
+
 .hr
 {
 	border-bottom: solid 2px #0088CC;

@@ -37,7 +37,7 @@
 		</tr>
 
 		<tr>
-			<td colspan="2" class='value'><span class="sum">###sum###</span> Ft</td>
+			<td colspan="2" class='value value_sum'><span class="sum">###sum###</span> Ft</td>
 		</tr>
 	</table>
 </div>	
