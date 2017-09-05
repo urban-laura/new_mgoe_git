@@ -7,21 +7,21 @@ body
 #sum
 {
 	text-align : center;
-	background-color : #E1E1E1;
-	border-bottom : solid 1px #C1C1C1;
+	background-color : #B9B9B9;
+	border-bottom : solid 1px #A1A1A1;
 }
 
 .frame
 {
 	width: 319px;
-	background-color: #F0F0F0;
+	background-color: #D9D9D9;
 	font-size: 14px;
-	color: #2D2D2D;
+	color: black;
 	border-radius: 5px 5px 5px 5px;
 	font-weight: normal;
-	border-left: solid 1px #C1C1C1;
-	border-right: solid 1px #C1C1C1;
-	border-bottom: solid 1px #C1C1C1;
+	border-left: solid 1px #A1A1A1;
+	border-right: solid 1px #A1A1A1;
+	border-bottom: solid 1px #A1A1A1;
 	font-family: 'Ubuntu';
 }
 
@@ -32,14 +32,14 @@ body
 
 .title
 {
-	background-color: #0088CC;
+	background-color: #444444;
 	height: 35px; 
 	padding-top : 12px;
 	border-radius: 5px 5px 0px 0px; 
 	padding-left: 31px;
 	padding-right: 31px;
-	border-top: solid 1px #C1C1C1;
-	border-bottom: solid 1px #C1C1C1;
+	border-top: solid 1px #A1A1A1;
+	border-bottom: solid 1px #A1A1A1;
 }
 
 .title h1
@@ -64,15 +64,15 @@ body
 	font-size: 18px;
 	color: white;
 	font-style : medium;
-	background-color: #0088CC;
+	background-color: #444444;
 	border-radius: 5px;
-	border: solid 1px #167AAC;
+	border: solid 1px #3F3A3A;
 }
 
 .form-submit:hover
 {
-	background-color: #FF7E00;
-	border: solid 1px #FF8E20;
+	background-color: #D82222;
+	border: solid 1px #E71717;
 }
 
 .submit
@@ -86,7 +86,7 @@ body
 {
 	height: 9px;
 	border-radius: 0px 0px 5px 5px; 
-	background-color: #0088CC;
+	background-color: #444444;
 }
 
 .validation-error
@@ -121,23 +121,23 @@ p
 
 .p_active
 {
-	color: #0088CC;
+	color: #444444;
 	font-weight: bold;
 }
 
 .active 
 {
-	background-image: url('../images/active_mgoe.png');
+	background-image: url('../images/active_alapjarat.png');
 	background-repeat : no-repeat;
 	background-size : contain; 
 	background-position : center center;
-    border: solid 1px #0088CC;
+    border: solid 1px #444444;
 }
 
 .inactive
 {
 	background-color: white;
-    border: solid 1px #C1C1C1;
+    border: solid 1px #A1A1A1;
 }
 
 .kw input, .le input
@@ -157,8 +157,8 @@ p
 .kw span:hover, .le span:hover
 {
    
-    background-color: #0088CC;
-    border: solid 1px #0088CC;
+    background-color: #444444;
+    border: solid 1px #444444;
 }
 
 .slectOne

@@ -1,0 +1,147 @@
+.center h5
+{
+	font-size: 16px;
+	font-weight: normal;
+	font-style: regular;
+	margin: 0;
+	padding-bottom: 12px;
+}
+
+.center
+{
+	font-weight : normal;
+	padding-left : 31px;
+	padding-right : 31px;
+	padding-top: 30px;
+	
+}
+
+.center h4
+{
+	font-size: 16px;
+	font-weight: normal;
+	font-style: regular;
+	margin: 0;
+	padding-left: 19px;
+	padding-right: 19px;
+	padding-top: 25px;
+	padding-bottom: 16px;
+}
+
+.center h6
+{
+	font-size: 16px;
+	font-weight: normal;
+	font-style: regular;
+	margin: 0;
+	padding-left: 19px;
+	padding-right: 19px;
+	padding-top: 25px;
+}
+
+select
+{
+	font-weight : 400;
+	font-style : italic;
+	font-size : 14px;
+	padding-left : 12px;
+	height : 34px;
+	width: 257px;
+	color : #2D2D2D;
+}
+
+.tomeg
+{
+	margin-top: 25px;
+}
+
+.date
+{
+	width: 116px;
+	margin-left: 15px;
+}
+
+#power
+{
+	font-weight : 400;
+	font-style : italic;
+	font-size : 14px;
+	padding-left : 12px;
+	height : 34px;
+	width: 116px;
+	margin-top: 16px;
+}
+
+label
+{
+	padding-top: 7px;
+}
+
+#p_kw, #p_le
+{
+	margin-top: 22px;
+}
+
+#sum
+{
+	padding-left: 31px;
+	padding-right: 31px;
+	height: 158px;
+}
+
+#sum table
+{
+	width: 257px;
+	padding-top: 8px;
+}
+
+.title2
+{
+	font-weight : 400;
+	font-size: 15px;
+	font-style: italic;
+	color: black;
+}
+
+.value
+{
+	font-size: 16px;
+	text-align: right;
+	width: 93px;
+}
+
+.sum
+{
+	font-weight : bold;
+	font-size: 36px;
+}
+
+.value_sum
+{
+	font-weight : bold;
+	font-size: 36px;
+}
+
+.hr
+{
+	border-bottom: solid 2px #D82222;
+}
+
+#error
+{
+	height : 158px;
+	padding-left : 31px;
+	padding-right : 31px;
+	background-color :  #B9B9B9;
+	border-bottom : solid 1px #A1A1A1;
+}
+	
+#error h5
+{
+	font-weight : 400;
+	font-style : italic;
+	font-size : 12px;
+	color : #E20000;
+	margin : 0;
+	padding-top : 20px;
+}
