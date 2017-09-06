@@ -182,6 +182,7 @@ if(isset($c_le))
 	$kw = $teljesitmeny * 0.745;
 }
 
+$kw2 = ceil($kw);
 
 $v_illetekek[] = array('min_t'=>0,  'max_t'=>40,  'min_y'=>0, 'max_y'=>3, 'value'=>550);
 $v_illetekek[] = array('min_t'=>0,  'max_t'=>40,  'min_y'=>4, 'max_y'=>8, 'value'=>450);
@@ -192,7 +193,7 @@ $v_illetekek[] = array('min_t'=>81, 'max_t'=>120, 'min_y'=>4, 'max_y'=>8, 'value
 
 foreach ($v_illetekek as $illetek)
 {
-	if(($kw>=$illetek['min_t'] && $kw<=$illetek['max_t']) && ($c_year>=$illetek['min_y'] && $c_year<=$illetek['max_y']))
+	if(($kw2>=$illetek['min_t'] && $kw2<=$illetek['max_t']) && ($c_year>=$illetek['min_y'] && $c_year<=$illetek['max_y']))
 	{
 		$v_illetek = $illetek['value'];
 		break;
@@ -206,24 +207,24 @@ $v_illetekek2[] = array('min_t'=>81, 'max_t'=>120, 'min'=>8, 'value'=>550);
 
 foreach ($v_illetekek2 as $illetek)
 {
-	if(($kw>=$illetek['min_t'] && $kw<=$illetek['max_t']) && ($c_year>$illetek['min']))
+	if(($kw2>=$illetek['min_t'] && $kw2<=$illetek['max_t']) && ($c_year>$illetek['min']))
 	{
 		$v_illetek = $illetek['value'];
 		break;
 	}
 }
 
-if(($kw > 120) && ($c_year >= 0 && $c_year <= 3))
+if(($kw2 > 120) && ($c_year >= 0 && $c_year <= 3))
 {
 $v_illetek = 850;
 }
 
-if(($kw > 120) && ($c_year >= 4 && $c_year <= 8))
+if(($kw2 > 120) && ($c_year >= 4 && $c_year <= 8))
 {
 $v_illetek = 750;
 }
 
-if($kw > 120 && $c_year > 8)
+if($kw2 > 120 && $c_year > 8)
 {
 $v_illetek = 650;
 }

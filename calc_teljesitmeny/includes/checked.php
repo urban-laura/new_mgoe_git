@@ -10,12 +10,12 @@ $p_le_visibility = '';
 
 if (!isset($_POST['submitted'])) 
 {
-	$le_value = 'checked';
-	$kw_value = '';
-	$kw_visibility = 'inactive';
-	$le_visibility = 'active';
-	$p_le_visibility = 'p_active';
-	$p_kw_visibility = '';
+	$kw_value = 'checked';
+	$le_value = '';
+	$kw_visibility = 'active';
+	$le_visibility = 'inactive';
+	$p_kw_visibility = 'p_active';
+	$p_le_visibility = '';
 }
 
 if (isset($_POST['kw'])) 
