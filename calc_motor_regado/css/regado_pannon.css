@@ -1,0 +1,84 @@
+.title
+{
+	height: 57px;
+}
+
+#sum
+{
+	height: 81px;
+	padding-top: 8px;
+}
+
+#sum h4
+{
+	font-size: 36px;
+	margin: 0;
+}
+
+#sum h5
+{
+	font-weight: 400;
+	font-style: italic;
+	font-size: 16px;
+	margin: 0;
+}
+
+#error
+{
+	height: 89px;
+	padding-left: 31px;
+	padding-right: 31px;
+}
+	
+#error h5
+{
+	font-weight: 400;
+	font-style: italic;
+	font-size: 12px;
+	margin: 0;
+	padding-top: 10px;
+}
+
+select
+{
+	font-weight: 400;
+	font-style: italic;
+	font-size: 14px;
+	padding-left: 12px;
+	height: 34px;
+	width: 257px;
+	color: #2D2D2D;
+}
+
+.center
+{
+	font-weight: normal;
+	padding-left: 31px;
+	padding-right: 31px;
+	margin-top: 31px;
+	
+}
+
+.center h3
+{
+	font-weight: normal;
+	font-style: regular;
+	font-size: 16px;
+	margin: 0;
+	margin-bottom: 12px;
+}
+
+.date
+{
+	width: 118px;
+}
+
+.koz
+{
+	margin-right: 17px;
+}
+
+.stb
+{
+	margin-top: 24px;
+}
