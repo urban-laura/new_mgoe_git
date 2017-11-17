@@ -14,7 +14,7 @@
   <div class='frame'>
 
   <div class='title'>
-      <h1>Személyautó regisztrációs adó</h1>
+      <h1>Személyautó<br /> regisztrációs adó</h1>
 	</div>
 
   <div id='sum' class='###sum-visibility###'>	
