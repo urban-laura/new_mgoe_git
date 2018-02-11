@@ -166,6 +166,11 @@ if($h == 1)
 	$sum = $o;
 }
 
+if (isset($_POST['api']) && $_POST['api'] == 1) {
+  print '1234';
+}
+
+
 $sum2 = number_format($sum, 0, '', ' ');
 
 $debug['sum'] = $sum2;
