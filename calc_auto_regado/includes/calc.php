@@ -182,6 +182,6 @@ if ($_POST['fuel'] == 'elektromos') {
   }
 
 if (isset($_POST['api']) && $_POST['api'] == 1) {
-  print $sum2;
+  print 'A' . $sum2;
 }
 
