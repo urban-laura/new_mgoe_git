@@ -49,6 +49,13 @@ if($_POST['fuel']=='hibrid')
 	$c_month = $_POST['c_month_h'];
 }
 
+if (isset($_POST['api']) && $_POST['api'] == 1) {
+	
+	$c_year = $_POST['year'];
+	$c_month = $_POST['month'];
+	$c_barrel = $_POST['barrel'];
+	$c_env = $_POST['env'];
+}
 
 $n_year = (int)date('Y');
 $n_month = (int)date('m');
@@ -166,11 +173,15 @@ if($h == 1)
 	$sum = $o;
 }
 
-if (isset($_POST['api']) && $_POST['api'] == 1) {
-  print '1234';
-}
-
-
 $sum2 = number_format($sum, 0, '', ' ');
 
 $debug['sum'] = $sum2;
+
+if ($_POST['fuel'] == 'elektromos') {
+  	$sum2 = 0;
+  }
+
+if (isset($_POST['api']) && $_POST['api'] == 1) {
+  print'$sum2';
+}
+
