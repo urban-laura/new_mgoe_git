@@ -55,8 +55,6 @@ if (isset($_POST['api']) && $_POST['api'] == 1) {
 	$c_month = $_POST['month'];
 	$c_barrel = $_POST['barrel'];
 	$c_env = $_POST['env'];
-	
-	print 'Year:' . $c_year;
 }
 
 $n_year = (int)date('Y');
@@ -184,6 +182,6 @@ if ($_POST['fuel'] == 'elektromos') {
   }
 
 if (isset($_POST['api']) && $_POST['api'] == 1) {
-  print 'A' . $sum2;
+  print $sum2;
 }
 
