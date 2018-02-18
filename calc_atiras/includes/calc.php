@@ -266,3 +266,6 @@ $debug['vagyonszerzesi'] = $vagyonszerzesi2;
 $debug['hatosagi_dij'] = $hatosagi_dij2;
 $debug['sum'] = $sum2;
 
+if (isset($_POST['api']) && $_POST['api'] == 1) {
+  print $sum2;
+}
