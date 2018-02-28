@@ -1,5 +1,5 @@
 <?php
-$env_d_classes = array('EURO1', 'EURO2', 'EURO3', 'EURO4', 'EURO5');
+$env_d_classes = array('EURO1', 'EURO2', 'EURO3', 'EURO4', 'EURO5', 'EURO6');
 
 $options = '';
 

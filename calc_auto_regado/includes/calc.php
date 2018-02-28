@@ -82,6 +82,14 @@ if($n_month > $c_month)
 
 $debug['month'] = $h;
 
+$amounts[] = array('barrel_b'=>'<=1100', 'barrel_d'=>'<=1300', 'env'=>'EURO6', 'value'=>45000);
+$amounts[] = array('barrel_b'=>'1101 - 1400', 'barrel_d'=>'1301 - 1500', 'env'=>'EURO6', 'value'=>65000);
+$amounts[] = array('barrel_b'=>'1401 - 1600', 'barrel_d'=>'1501 - 1700', 'env'=>'EURO6', 'value'=>85000);
+$amounts[] = array('barrel_b'=>'1601 - 1800', 'barrel_d'=>'1701 - 2000', 'env'=>'EURO6', 'value'=>135000);
+$amounts[] = array('barrel_b'=>'1801 - 2000', 'barrel_d'=>'2001 - 2500', 'env'=>'EURO6', 'value'=>185000);
+$amounts[] = array('barrel_b'=>'2001 - 2500', 'barrel_d'=>'2501 - 3000', 'env'=>'EURO6', 'value'=>265000);
+$amounts[] = array('barrel_b'=>'>=2501', 'barrel_d'=>'>=3001', 'env'=>'EURO6', 'value'=>400000);
+
 $amounts[] = array('barrel_b'=>'<=1100', 'barrel_d'=>'<=1300', 'env'=>'EURO5', 'value'=>45000);
 $amounts[] = array('barrel_b'=>'1101 - 1400', 'barrel_d'=>'1301 - 1500', 'env'=>'EURO5', 'value'=>65000);
 $amounts[] = array('barrel_b'=>'1401 - 1600', 'barrel_d'=>'1501 - 1700', 'env'=>'EURO5', 'value'=>85000);
