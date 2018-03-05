@@ -50,7 +50,20 @@ if($_POST['type'] == 'Személygépjármű')
 {
 	$year = $_POST['sz_year'];
 	$teljesitmeny = $_POST['sz_teljesitmeny'];
+	
 	$barrel = $_POST['sz_barrel'];
+	if ((int)$barrel !== 0) {
+		if ($barrel <= 1400) {
+		  $barrel = '<=1400';
+		}
+		if ($barrel > 1400 && $barrel <= 2000) {
+		  $barrel = '1401 - 2000';
+		}
+		if ($barrel >= 2001 ) {
+		  $barrel = '>=2001';
+		}
+	}
+	
 	$c_kw = $_POST['sz_kw'];
 	$c_le = $_POST['sz_le'];
 

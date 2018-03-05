@@ -53,8 +53,35 @@ if (isset($_POST['api']) && $_POST['api'] == 1) {
 	
 	$c_year = $_POST['year'];
 	$c_month = $_POST['month'];
-	$c_barrel = $_POST['barrel'];
 	$c_env = $_POST['env'];
+
+	$barrel = $_POST['barrel'];
+	if ((int)$barrel == 0) {
+	  $c_barrel = $barrel;
+	}
+	else {
+	  if ($_POST['fuel'] == 'dizel') { 
+        $fuel = 'dizel'; 
+        if ($barrel <= 1300 ) { $c_barrel = '<=1300'; }
+        elseif ($barrel > 1300 && $barrel <= 1500) { $c_barrel = '1301 - 1500'; }
+        elseif ($barrel > 1500 && $barrel <= 1700) { $c_barrel = '1501 - 1700'; }
+        elseif ($barrel > 1700 && $barrel <= 2000) { $c_barrel = '1701 - 2000'; }
+        elseif ($barrel > 2000 && $barrel <= 2500) { $c_barrel = '2001 - 2500'; }
+        elseif ($barrel > 2500 && $barrel <= 3000) { $c_barrel = '2501 - 3000'; }
+        elseif ($barrel > 3000) { $c_barrel = '>=3001'; }
+      }
+      elseif ($_POST['fuel'] == 'benzin') { 
+        $fuel = 'benzin'; 
+        if ($barrel <= 1100 ) { $c_barrel = '<=1100'; }
+        elseif ($barrel > 1100 && $barrel <= 1400) { $c_barrel = '1101 - 1400'; }
+        elseif ($barrel > 1400 && $barrel <= 1600) { $c_barrel = '1401 - 1600'; }
+        elseif ($barrel > 1600 && $barrel <= 1800) { $c_barrel = '1601 - 1800'; }
+        elseif ($barrel > 1800 && $barrel <= 2000) { $c_barrel = '1801 - 2000'; }
+        elseif ($barrel > 2000 && $barrel <= 2500) { $c_barrel = '2001 - 2500'; }
+        elseif ($barrel > 2500) { $c_barrel = '>=2501'; }
+      }
+    }
+
 }
 
 $n_year = (int)date('Y');
