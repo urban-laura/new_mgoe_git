@@ -1,24 +1,24 @@
 .title
 {
-	height: 57px;
+	height: 0px;
 }
 
 #sum
 {
-	height: 81px;
-	padding-top: 8px;
+	height: 100px;
+	padding-top: 15px;
 }
 
 #sum h4
 {
 	font-size: 36px;
 	margin: 0;
+	padding-bottom: 15px;
 }
 
 #sum h5
 {
 	font-weight: 400;
-	font-style: italic;
 	font-size: 16px;
 	margin: 0;
 }
@@ -33,7 +33,6 @@
 #error h5
 {
 	font-weight: 400;
-	font-style: italic;
 	font-size: 12px;
 	margin: 0;
 	padding-top: 10px;
@@ -42,7 +41,6 @@
 select
 {
 	font-weight: 400;
-	font-style: italic;
 	font-size: 14px;
 	padding-left: 12px;
 	height: 34px;

@@ -41,7 +41,7 @@
 <form name='calculator' method='post' class='calc-form'>
 <div class='center'>
 
-<select name='power' class="###power###">
+<select name='power' class="power ###power###">
 	<option value="0" disabled selected class='invisible'>Teljesítmény (kW)</option>
 	###power-options###
 </select>

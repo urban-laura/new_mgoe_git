@@ -74,7 +74,7 @@
 		###barrel-sz-options###
 	</select>
 
-	<input type='text' name='sz_teljesitmeny' id='power' class="error_color ###power###" value='###sz_teljesitmeny###' placeholder="Teljesítmény">
+	<input type='text' name='sz_teljesitmeny' id='power' class="input error_color ###power###" value='###sz_teljesitmeny###' placeholder="Teljesítmény">
 
 	<p id="p_kw" class="p_kw ###p-kw-visibility###">kW</p>
 	<label class="kw">
@@ -104,7 +104,7 @@
 		###barrel-m-options###
 	</select>
 
-	<input type='text' name='m_teljesitmeny' id='power' class="error_color ###power###" value='###m_teljesitmeny###' placeholder="Teljesítmény">
+	<input type='text' name='m_teljesitmeny' id='power' class="input error_color ###power###" value='###m_teljesitmeny###' placeholder="Teljesítmény">
 
 	<p id="p_kw" class="p_kw ###p-kw-visibility###">kW</p>
 	<label class="kw">
@@ -130,7 +130,7 @@
 		</select>
 	</h6>
 
-	<input type='text' name='q_teljesitmeny' id='power' class="error_color ###power###" value='###q_teljesitmeny###' placeholder="Teljesítmény">
+	<input type='text' name='q_teljesitmeny' id='power' class="input error_color ###power###" value='###q_teljesitmeny###' placeholder="Teljesítmény">
 
 	<p id="p_kw" class="p_kw ###p-kw-visibility###">kW</p>
 	<label class="kw">
@@ -155,7 +155,7 @@
 		</select>
 	</h6>
 
-	<input type='text' name='k_teljesitmeny' id='power' class="error_color ###power###" value='###k_teljesitmeny###' placeholder="Teljesítmény">
+	<input type='text' name='k_teljesitmeny' id='power' class="input error_color ###power###" value='###k_teljesitmeny###' placeholder="Teljesítmény">
 
 	<p id="p_kw" class="p_kw ###p-kw-visibility###">kW</p>
 	<label class="kw">
@@ -185,7 +185,7 @@
 		###tomeg-options###
 	</select>
 
-	<input type='text' name='t_teljesitmeny' id='power' class="error_color ###power###" value='###t_teljesitmeny###' placeholder="Teljesítmény">
+	<input type='text' name='t_teljesitmeny' id='power' class="input error_color ###power###" value='###t_teljesitmeny###' placeholder="Teljesítmény">
 
 	<p id="p_kw" class="p_kw ###p-kw-visibility###">kW</p>
 	<label class="kw">
@@ -216,7 +216,7 @@
 		###szem-szam-options###
 	</select>
 
-	<input type='text' name='a_teljesitmeny' id='power' class="error_color ###power###" value='###a_teljesitmeny###' placeholder="Teljesítmény">
+	<input type='text' name='a_teljesitmeny' id='power' class="input error_color ###power###" value='###a_teljesitmeny###' placeholder="Teljesítmény">
 
 	<p id="p_kw" class="p_kw ###p-kw-visibility###">kW</p>
 	<label class="kw">

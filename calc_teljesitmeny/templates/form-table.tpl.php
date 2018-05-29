@@ -28,13 +28,13 @@
 			<div class='center'>
 
 				<h4>Gyártási év: 
-				<select name='year' id='year' class="###year###">
+				<select name='year' id='year' class="date ###year###">
 					<option value="0" disabled selected class='invisible'>Év</option>
 					###year-options###
 				</select>
 				</h4>
 
-				<input type='text' name='teljesitmeny' id='power' class="###power###" value='###teljesitmeny###' placeholder="Teljesítmény">
+				<input type='text' name='teljesitmeny' id='power' class="input ###power###" value='###teljesitmeny###' placeholder="Teljesítmény">
 
 					<p id="p_kw" class="###p-kw-visibility###">kW</p>
 					<label class="kw">

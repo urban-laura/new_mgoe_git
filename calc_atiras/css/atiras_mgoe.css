@@ -42,7 +42,6 @@
 select
 {
 	font-weight : 400;
-	font-style : italic;
 	font-size : 14px;
 	padding-left : 12px;
 	height : 34px;
@@ -53,6 +52,7 @@ select
 .tomeg
 {
 	margin-top: 25px;
+	margin-bottom: 5px;
 }
 
 .date
@@ -64,7 +64,6 @@ select
 #power
 {
 	font-weight : 400;
-	font-style : italic;
 	font-size : 14px;
 	padding-left : 12px;
 	height : 34px;
@@ -99,7 +98,6 @@ label
 {
 	font-weight : 400;
 	font-size: 15px;
-	font-style: italic;
 	color: #353535;
 }
 
@@ -139,9 +137,22 @@ label
 #error h5
 {
 	font-weight : 400;
-	font-style : italic;
 	font-size : 12px;
 	color : #E20000;
 	margin : 0;
 	padding-top : 20px;
+}
+
+@media screen and (max-width: 768px)
+{
+	#sum
+	{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.date
+	{
+		margin-left: 14px;
+	}
 }

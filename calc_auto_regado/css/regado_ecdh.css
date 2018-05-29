@@ -1,24 +1,19 @@
-.title
-{
-	height: 57px;
-}
-
 #sum
 {
-	height : 81px;
-	padding-top : 8px;
+	height : 100px;
+	padding-top : 15px;	
 }
 
 #sum h4
 {
 	font-size : 36px;
 	margin : 0;
+	padding-bottom: 15px;
 }
 
 #sum h5
 {
 	font-weight : 400;
-	font-style : italic;
 	font-size : 16px;
 	margin : 0;
 }
@@ -42,12 +37,11 @@
 select
 {
 	font-weight : 400;
-	font-style : italic;
 	font-size : 14px;
 	padding-left : 12px;
 	height : 34px;
 	width : 257px;
-	color : #2D2D2D;
+	color : #777A7D;
 }
 
 .center
@@ -80,11 +74,12 @@ select
 .stb
 {
 	margin-top : 24px;
+	margin-bottom: 5px;
 }
 
 #error
 {
-	height : 89px;
+	height : 100px;
 	padding-left : 31px;
 	padding-right : 31px;
 }
@@ -92,9 +87,12 @@ select
 #error h5
 {
 	font-weight : 400;
-	font-style : italic;
 	font-size : 12px;
 	margin : 0;
 	padding-top : 10px;
 }
 
+.submit
+{
+	padding-bottom: 0px;
+}

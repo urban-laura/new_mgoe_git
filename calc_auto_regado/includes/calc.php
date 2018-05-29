@@ -53,35 +53,8 @@ if (isset($_POST['api']) && $_POST['api'] == 1) {
 	
 	$c_year = $_POST['year'];
 	$c_month = $_POST['month'];
+	$c_barrel = $_POST['barrel'];
 	$c_env = $_POST['env'];
-
-	$barrel = $_POST['barrel'];
-	if ((int)$barrel == 0) {
-	  $c_barrel = $barrel;
-	}
-	else {
-	  if ($_POST['fuel'] == 'dizel') { 
-        $fuel = 'dizel'; 
-        if ($barrel <= 1300 ) { $c_barrel = '<=1300'; }
-        elseif ($barrel > 1300 && $barrel <= 1500) { $c_barrel = '1301 - 1500'; }
-        elseif ($barrel > 1500 && $barrel <= 1700) { $c_barrel = '1501 - 1700'; }
-        elseif ($barrel > 1700 && $barrel <= 2000) { $c_barrel = '1701 - 2000'; }
-        elseif ($barrel > 2000 && $barrel <= 2500) { $c_barrel = '2001 - 2500'; }
-        elseif ($barrel > 2500 && $barrel <= 3000) { $c_barrel = '2501 - 3000'; }
-        elseif ($barrel > 3000) { $c_barrel = '>=3001'; }
-      }
-      elseif ($_POST['fuel'] == 'benzin') { 
-        $fuel = 'benzin'; 
-        if ($barrel <= 1100 ) { $c_barrel = '<=1100'; }
-        elseif ($barrel > 1100 && $barrel <= 1400) { $c_barrel = '1101 - 1400'; }
-        elseif ($barrel > 1400 && $barrel <= 1600) { $c_barrel = '1401 - 1600'; }
-        elseif ($barrel > 1600 && $barrel <= 1800) { $c_barrel = '1601 - 1800'; }
-        elseif ($barrel > 1800 && $barrel <= 2000) { $c_barrel = '1801 - 2000'; }
-        elseif ($barrel > 2000 && $barrel <= 2500) { $c_barrel = '2001 - 2500'; }
-        elseif ($barrel > 2500) { $c_barrel = '>=2501'; }
-      }
-    }
-
 }
 
 $n_year = (int)date('Y');
@@ -169,27 +142,44 @@ if($_POST['fuel']=='hibrid')
 
 $debug['amount'] = $o;
 
-$ranges[] = array('min'=>2, 'max'=>4, 'value'=>0.06);
-$ranges[] = array('min'=>4, 'max'=>6, 'value'=>0.1);
-$ranges[] = array('min'=>6, 'max'=>12, 'value'=>0.14);
-$ranges[] = array('min'=>12, 'max'=>24, 'value'=>0.2);
-$ranges[] = array('min'=>24, 'max'=>36, 'value'=>0.31);
-$ranges[] = array('min'=>36, 'max'=>48, 'value'=>0.41);
-$ranges[] = array('min'=>48, 'max'=>60, 'value'=>0.49);
-$ranges[] = array('min'=>60, 'max'=>72, 'value'=>0.56);
-$ranges[] = array('min'=>72, 'max'=>84, 'value'=>0.62);
-$ranges[] = array('min'=>84, 'max'=>96, 'value'=>0.68);
-$ranges[] = array('min'=>96, 'max'=>108, 'value'=>0.72);
-$ranges[] = array('min'=>108, 'max'=>120, 'value'=>0.76);
-$ranges[] = array('min'=>120, 'max'=>132, 'value'=>0.79);
-$ranges[] = array('min'=>132, 'max'=>144, 'value'=>0.82);
-$ranges[] = array('min'=>144, 'max'=>156, 'value'=>0.85);
-$ranges[] = array('min'=>156, 'max'=>168, 'value'=>0.89);
+$ranges[] = array('min'=>1, 'max'=>2, 'value'=>0.06);
+$ranges[] = array('min'=>3, 'max'=>4, 'value'=>0.1);
+$ranges[] = array('min'=>5, 'max'=>6, 'value'=>0.14);
+$ranges[] = array('min'=>7, 'max'=>12, 'value'=>0.2);
+$ranges[] = array('min'=>13, 'max'=>24, 'value'=>0.31);
+$ranges[] = array('min'=>25, 'max'=>36, 'value'=>0.41);
+$ranges[] = array('min'=>37, 'max'=>48, 'value'=>0.49);
+$ranges[] = array('min'=>49, 'max'=>60, 'value'=>0.56);
+$ranges[] = array('min'=>61, 'max'=>72, 'value'=>0.62);
+$ranges[] = array('min'=>73, 'max'=>84, 'value'=>0.68);
+$ranges[] = array('min'=>85, 'max'=>96, 'value'=>0.72);
+$ranges[] = array('min'=>97, 'max'=>108, 'value'=>0.76);
+$ranges[] = array('min'=>109, 'max'=>120, 'value'=>0.79);
+$ranges[] = array('min'=>121, 'max'=>132, 'value'=>0.82);
+$ranges[] = array('min'=>133, 'max'=>144, 'value'=>0.85);
+$ranges[] = array('min'=>145, 'max'=>156, 'value'=>0.87);
+$ranges[] = array('min'=>157, 'max'=>168, 'value'=>0.89);
+
+/*$ranges[] = array('min'=>3, 'max'=>4, 'value'=>0.1);
+$ranges[] = array('min'=>5, 'max'=>6, 'value'=>0.14);
+$ranges[] = array('min'=>7, 'max'=>12, 'value'=>0.2);
+$ranges[] = array('min'=>25, 'max'=>36, 'value'=>0.41);
+$ranges[] = array('min'=>37, 'max'=>48, 'value'=>0.49);
+$ranges[] = array('min'=>49, 'max'=>60, 'value'=>0.56);
+$ranges[] = array('min'=>61, 'max'=>72, 'value'=>0.62);
+$ranges[] = array('min'=>73, 'max'=>84, 'value'=>0.68);
+$ranges[] = array('min'=>85, 'max'=>96, 'value'=>0.72);
+$ranges[] = array('min'=>97, 'max'=>108, 'value'=>0.76);
+$ranges[] = array('min'=>109, 'max'=>120, 'value'=>0.79);
+$ranges[] = array('min'=>121, 'max'=>132, 'value'=>0.82);
+$ranges[] = array('min'=>133, 'max'=>144, 'value'=>0.85);
+$ranges[] = array('min'=>145, 'max'=>156, 'value'=>0.87);
+$ranges[] = array('min'=>157, 'max'=>168, 'value'=>0.89);*/
 
 
 foreach ($ranges as $range)
 {
-	if($h>=$range['min'] && $h<$range['max'])
+	if($h>=$range['min'] && $h<=$range['max'])
 	{
 		$sz = $o * $range['value'];
 		$sum = $o - $sz;
@@ -203,10 +193,6 @@ if($h>=169)
 	$sum = $o - $sz;
 }
 
-if($h == 1)
-{
-	$sum = $o;
-}
 
 $sum2 = number_format($sum, 0, '', ' ');
 

@@ -7,15 +7,15 @@ body
 #sum
 {
 	text-align : center;
-	background-color : #252525;
-	border-bottom : solid 1px #616B6D;
-	color: white;
+	background-color : #DBDFE3;
+	color: #6A7176;
+	border-radius: 5px;
 }
 
 #error
 {
-	background-color : #252525;
-	border-bottom : solid 1px #616B6D;
+	background-color : #DBDFE3;
+	border-radius: 5px;
 }
 
 #error h5
@@ -25,15 +25,14 @@ body
 
 .frame
 {
+	height: auto;
 	width: 319px;
-	background-color: #F1F1F1;
+	background-color: #E6E9EC;
 	font-size: 14px;
-	color: black;
-	border-radius: 5px 5px 5px 5px;
+	color: #737A7F;
+	border-radius: 0px 5px 5px 0px;
+	padding: 20px;
 	font-weight: normal;
-	border-left: solid 1px #616B6D;
-	border-right: solid 1px #616B6D;
-	border-bottom: solid 1px #616B6D;
 	font-family: 'Ubuntu';
 }
 
@@ -44,23 +43,13 @@ body
 
 .title
 {
-	background-color: #1275E6;
-	height: 35px; 
-	padding-top : 12px;
-	border-radius: 5px 5px 0px 0px; 
-	padding-left: 31px;
-	padding-right: 31px;
-	border-top: solid 1px #616B6D;
-	border-bottom: solid 1px #616B6D;
+	height: 0px; 
 }
 
 .title h1
 {
-	font-size: 18px;
-	color: white;
-	text-align: center;	
-	font-style : medium;
-	margin: 0;
+	font-size: 0px;
+	
 }
 
 .invisible
@@ -70,35 +59,46 @@ body
 
 .form-submit
 {
-	width: 165px;
-	height: 34px;
+	width: 256px;
+    height: 50px;
+    font-size: 16px;
+    color: white;
 	text-align: center;
-	font-size: 18px;
-	color: white;
 	font-style : medium;
-	background-color: #1275E6;
 	border-radius: 5px;
-	border: solid 1px #167AAC;
+	background: linear-gradient(32.39deg, #655fff 0%, rgba(53, 152, 254, 0) 100%);
+    background-color: #3598FE;
+    border: 0px;
 }
 
 .form-submit:hover
 {
-	background-color: #FF7E00;
-	border: solid 1px #FF8E20;
+	background-color: #BD6185;
+	border: 0px;
 }
 
 .submit
 {
 	text-align: center;
-	padding-top: 33px;
-	padding-bottom: 24px;
+	padding-top: 60px;
 }
 
 #zero
 {
-	height: 9px;
-	border-radius: 0px 0px 5px 5px; 
-	background-color: #1275E6;
+	height: 0px;
+	border-radius: 0px;
+}
+
+select
+{
+	border: solid 1px white;
+	border-radius: 3px;
+}
+
+.input
+{
+	border: solid 1px white;
+	border-radius: 3px;
 }
 
 .validation-error
@@ -191,4 +191,45 @@ p
 #p_kw
 {
 	margin-right: 4px; 
+}
+
+@media screen and (max-width: 768px) 
+{
+	.frame
+	{
+	width: 290px;
+	border-radius: 0px 0px 5px 5px;
+	padding: 10px;
+	}
+
+	select
+	{
+		width: 290px !important;
+	}
+
+	.type
+	{
+		padding-left: 0px !important;
+	}
+
+	.center
+	{
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+
+	.date
+	{
+		width: 134px !important;
+	}
+
+	.form-submit
+	{
+		width: 290px;
+	}
+
+	.submit
+	{
+		padding-top: 30px;
+	}
 }
