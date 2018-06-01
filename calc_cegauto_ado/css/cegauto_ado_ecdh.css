@@ -63,12 +63,3 @@ table
 {
 	margin-bottom: 5px;
 }
-
-@media screen and (max-width: 768px)
-{
-	#sum
-	{
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-}

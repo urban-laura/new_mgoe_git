@@ -20,9 +20,7 @@
 
 .type
 {
-	padding-top : 31px;
 	padding-bottom : 25px;
-	padding-left : 31px;
 }
 
 .type h4
@@ -63,12 +61,12 @@ select
 
 .date
 {
-	width : 118px;
+	width: 48% !important;
 }
 
-.koz
+.right
 {
-	margin-right : 17px;
+	float: right;
 }
 
 .stb
@@ -95,4 +93,9 @@ select
 .submit
 {
 	padding-bottom: 0px;
+}
+
+#elektromos
+{
+	text-align: center;
 }

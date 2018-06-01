@@ -1,6 +1,6 @@
 .center
 {
-	padding : 31px; 
+	padding : 20px !important; 
 }
 
 .motorkerekparok
@@ -158,15 +158,6 @@ table
 	font-size: 16px;
 	text-align: right;
 	color: #6A7176;
-}
-
-@media screen and (max-width: 768px)
-{
-	#sum
-	{
-		padding-left: 15px;
-		padding-right: 15px;
-	} 
 }
 
 

@@ -22,10 +22,9 @@
 	font-weight: normal;
 	font-style: regular;
 	margin: 0;
-	padding-left: 19px;
-	padding-right: 19px;
 	padding-top: 25px;
 	padding-bottom: 16px;
+	text-align: center;
 }
 
 .center h6
@@ -34,9 +33,8 @@
 	font-weight: normal;
 	font-style: regular;
 	margin: 0;
-	padding-left: 19px;
-	padding-right: 19px;
 	padding-top: 25px;
+	text-align: center;
 }
 
 select
@@ -57,28 +55,28 @@ select
 
 .date
 {
-	width: 116px;
+	width: 40% !important;
 	margin-left: 15px;
 }
 
 #power
 {
 	font-weight : 400;
-	font-size : 14px;
+	font-size : 16px;
 	padding-left : 12px;
-	height : 34px;
-	width: 116px;
+	height : 44px;
+	width: 55%;
 	margin-top: 16px;
 }
 
 label
 {
-	padding-top: 7px;
+	padding-top: 13px;
 }
 
 #p_kw, #p_le
 {
-	margin-top: 22px;
+	margin-top: 29px;
 }
 
 #sum
@@ -140,25 +138,6 @@ label
 	font-size : 12px;
 	margin : 0;
 	padding-top : 20px;
-}
-
-@media screen and (max-width: 768px)
-{
-	#sum
-	{
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-
-	.date
-	{
-		margin-left: 30px;
-	}
-
-	#power
-	{
-		width: 134px;
-	}
 }
 
 

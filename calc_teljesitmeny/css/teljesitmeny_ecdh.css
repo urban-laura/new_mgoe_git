@@ -13,8 +13,7 @@
 	font-weight: normal;
 	font-style: regular;
 	margin: 0;
-	padding-left: 19px;
-	padding-right: 19px;
+	text-align: center;
 }
 
 #sum
@@ -51,7 +50,7 @@ select
 	font-size : 14px;
 	padding-left : 12px;
 	height : 34px;
-	width: 116px;
+	width: 40% !important;
 	color : #2D2D2D;
 	margin-left: 15px;
 }
@@ -59,32 +58,19 @@ select
 #power
 {
 	font-weight : 400;
-	font-size : 14px;
+	font-size : 16px;
 	padding-left : 12px;
-	height : 34px;
-	width: 116px;
+	height : 44px;
+	width: 55%;
 	margin-top: 30px;
 }
 
 label
 {
-	padding-top: 20px;
+	padding-top: 26px;
 }
 
 #p_kw, #p_le
 {
-	margin-top: 35px;
-}
-
-@media screen and (max-width: 768px)
-{
-	.date
-	{
-		margin-left: 30px;
-	}
-
-	#power
-	{
-		width: 134px;
-	}
+	margin-top: 42px;
 }

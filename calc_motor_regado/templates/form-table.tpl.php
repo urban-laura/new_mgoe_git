@@ -33,7 +33,7 @@
 					###year-m-options###
 				</select>
 
-				<select name='m_month' class='error_color date ###m_month###'>
+				<select name='m_month' class='error_color date right ###m_month###'>
 					<option value="0" disabled selected class='invisible'>Hónap</option>
 					###month-m-options###
 				</select>

@@ -68,12 +68,12 @@ select
 
 .date
 {
-	width: 118px;
+	width: 48% !important;
 }
 
-.koz
+.right
 {
-	margin-right: 17px;
+	float: right;
 }
 
 .stb

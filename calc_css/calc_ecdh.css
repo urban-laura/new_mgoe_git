@@ -10,28 +10,38 @@ body
 	background-color : #DBDFE3;
 	color: #6A7176;
 	border-radius: 5px;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+#sum table 
+{
+    margin: auto !important;
 }
 
 #error
 {
 	background-color : #DBDFE3;
 	border-radius: 5px;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
 }
 
 #error h5
 {
-	color : #FF0000;
+	color : #F36464;
+	max-width: 230px !important;
+	margin: auto !important;
+	text-align: center;
 }
 
 .frame
 {
 	height: auto;
-	width: 319px;
+	width: 100%;
 	background-color: #E6E9EC;
 	font-size: 14px;
 	color: #737A7F;
-	border-radius: 0px 5px 5px 0px;
-	padding: 20px;
 	font-weight: normal;
 	font-family: 'Ubuntu';
 }
@@ -39,6 +49,13 @@ body
 .calc-form
 {
 	margin: 0;
+	padding: 20px;
+}
+
+.center
+{
+	padding: 0px !important;
+	margin-top: 0px !important;
 }
 
 .title
@@ -59,7 +76,7 @@ body
 
 .form-submit
 {
-	width: 256px;
+	width: 100%;
     height: 50px;
     font-size: 16px;
     color: white;
@@ -80,7 +97,7 @@ body
 .submit
 {
 	text-align: center;
-	padding-top: 60px;
+	padding-top: 80px;
 }
 
 #zero
@@ -93,6 +110,9 @@ select
 {
 	border: solid 1px white;
 	border-radius: 3px;
+	font-size: 16px !important;
+	height: 44px !important;
+	width: 100% !important;
 }
 
 .input
@@ -103,8 +123,8 @@ select
 
 .validation-error
 {
-	color: #E20000;
-	border: 1px solid #E20000;
+	color: #F36464;
+	border: 1px solid #F36464;
 }
 
 ul
@@ -117,6 +137,7 @@ ul
 li
 {
 	padding-left : 15px;
+	text-align: left;
 }
 
 label, p
@@ -191,45 +212,4 @@ p
 #p_kw
 {
 	margin-right: 4px; 
-}
-
-@media screen and (max-width: 768px) 
-{
-	.frame
-	{
-	width: 290px;
-	border-radius: 0px 0px 5px 5px;
-	padding: 10px;
-	}
-
-	select
-	{
-		width: 290px !important;
-	}
-
-	.type
-	{
-		padding-left: 0px !important;
-	}
-
-	.center
-	{
-		padding-left: 0px !important;
-		padding-right: 0px !important;
-	}
-
-	.date
-	{
-		width: 134px !important;
-	}
-
-	.form-submit
-	{
-		width: 290px;
-	}
-
-	.submit
-	{
-		padding-top: 30px;
-	}
 }

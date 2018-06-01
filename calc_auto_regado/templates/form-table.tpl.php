@@ -48,7 +48,7 @@
 	  ###year-b-options###
     </select>
 
-    <select name='c_month_b' class='error_color date ###c_month###'>
+    <select name='c_month_b' class='error_color date right ###c_month###'>
       <option value="0" disabled selected class='invisible'>Hónap</option>
 	  ###month-b-options###
     </select>
@@ -74,7 +74,7 @@
 	  ###year-d-options###
     </select>
 
-    <select name='c_month_d' class='error_color date ###c_month###'>
+    <select name='c_month_d' class='error_color date right ###c_month###'>
       <option value="0" disabled selected class='invisible'>Hónap</option>
 	  ###month-d-options###
     </select>
@@ -100,7 +100,7 @@
 	  ###year-h-options###
     </select>
 
-    <select name='c_month_h' class='error_color date ###c_month###'>
+    <select name='c_month_h' class='error_color date right ###c_month###'>
       <option value="0" disabled selected class='invisible'>Hónap</option>
 	  ###month-h-options###
     </select>
