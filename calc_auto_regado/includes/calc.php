@@ -126,12 +126,28 @@ $amounts[] = array('barrel_b'=>'1801 - 2000', 'barrel_d'=>'2001 - 2500', 'env'=>
 $amounts[] = array('barrel_b'=>'2001 - 2500', 'barrel_d'=>'2501 - 3000', 'env'=>'EURO1', 'value'=>3180000);
 $amounts[] = array('barrel_b'=>'>=2501', 'barrel_d'=>'>=3001', 'env'=>'EURO1', 'value'=>4800000);
 
-foreach($amounts as $amount)
+if($_POST['fuel']=='benzin')
 {
-	if(($c_barrel==$amount['barrel_b'] || $c_barrel==$amount['barrel_d']) && $c_env==$amount['env'])
+	foreach($amounts as $amount)
 	{
-		$o = $amount['value'];
-		break;
+		if($c_barrel==$amount['barrel_b'] && $c_env==$amount['env'])
+		{
+			$o = $amount['value'];
+			break;
+		}
+	}
+}
+
+
+if($_POST['fuel']=='dizel')
+{
+	foreach($amounts as $amount)
+	{
+		if($c_barrel==$amount['barrel_d'] && $c_env==$amount['env'])
+		{
+			$o = $amount['value'];
+			break;
+		}
 	}
 }
 
@@ -359,7 +375,6 @@ if($h>=169)
 {
 	$sum = $o * 0.1;
 }
-
 
 
 $sum2 = number_format($sum, 0, '', ' ');
