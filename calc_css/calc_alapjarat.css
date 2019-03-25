@@ -18,6 +18,8 @@ body
 	color: #333332;
 	font-weight: normal;
 	font-family: 'Ubuntu';
+	padding-top: 20px;
+	background-color: white;
 }
 
 .calc-form
