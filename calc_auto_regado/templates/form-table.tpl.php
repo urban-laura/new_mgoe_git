@@ -47,7 +47,7 @@
       <option value="0" disabled selected class='invisible'>Év</option>
 	  ###year-b-options###
     </select>
-
+    
     <select name='c_month_b' class='error_color date right ###c_month###'>
       <option value="0" disabled selected class='invisible'>Hónap</option>
 	  ###month-b-options###

@@ -1,6 +1,12 @@
+#sum
+{
+	margin: 0px 20px;
+	margin-top: 20px;
+}
+
 .center
 {
-	padding : 31px; 
+	padding : 20px 30px;
 }
 
 .motorkerekparok
@@ -49,20 +55,13 @@ h5
 
 select
 {
-	font-weight : 400;
-	font-style : italic;
-	font-size : 14px;
-	padding-left : 12px;
-	height : 34px;
-	width : 257px;
-	color : #2D2D2D;
+	font-size : 18px;
+	padding-left : 20px;
+	height : 45px;
+	width : 100%;
+	border: 0px;
+	background-color: #F7F7F7;
 }
-
-#sum
-{
-	padding-left: 31px;
-	padding-right: 31px;
-} 
 
 span.betu, h5
 {
@@ -95,6 +94,7 @@ span.megnevezes
 table
 {
 	width: 257px;
+	margin: auto;
 }
 
 .szemelygepjarmuvek table

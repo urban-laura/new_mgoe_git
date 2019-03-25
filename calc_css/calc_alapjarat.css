@@ -1,54 +1,34 @@
 body
 {
 	margin: 0;
-	padding: 0;	
+	padding: 0;
 }
 
 #sum
 {
 	text-align : center;
-	background-color : #B9B9B9;
-	border-bottom : solid 1px #A1A1A1;
+	background-color : #F7F7F7;
 }
 
 .frame
 {
-	width: 319px;
-	background-color: #D9D9D9;
+	width: 100%;
+	max-width: 445px;
 	font-size: 14px;
-	color: black;
-	border-radius: 5px 5px 5px 5px;
+	color: #333332;
 	font-weight: normal;
-	border-left: solid 1px #A1A1A1;
-	border-right: solid 1px #A1A1A1;
-	border-bottom: solid 1px #A1A1A1;
 	font-family: 'Ubuntu';
 }
 
 .calc-form
 {
 	margin: 0;
+	padding: 20px 30px;
 }
 
 .title
 {
-	background-color: #444444;
-	height: 35px; 
-	padding-top : 12px;
-	border-radius: 5px 5px 0px 0px; 
-	padding-left: 31px;
-	padding-right: 31px;
-	border-top: solid 1px #A1A1A1;
-	border-bottom: solid 1px #A1A1A1;
-}
-
-.title h1
-{
-	font-size: 18px;
-	color: white;
-	text-align: center;	
-	font-style : medium;
-	margin: 0;
+display: none;
 }
 
 .invisible
@@ -58,41 +38,32 @@ body
 
 .form-submit
 {
-	width: 165px;
-	height: 34px;
+	width: 100%;
+	height: 60px;
 	text-align: center;
 	font-size: 18px;
 	color: white;
-	font-style : medium;
-	background-color: #444444;
-	border-radius: 5px;
-	border: solid 1px #3F3A3A;
+	font-weight: bold;
+	background-color: #C72026;
+	border-radius: 3px;
+	border: 0px;
 }
 
 .form-submit:hover
 {
-	background-color: #D82222;
-	border: solid 1px #E71717;
+	color: #333332;
 }
 
 .submit
 {
 	text-align: center;
 	padding-top: 33px;
-	padding-bottom: 24px;
-}
-
-#zero
-{
-	height: 9px;
-	border-radius: 0px 0px 5px 5px; 
-	background-color: #444444;
 }
 
 .validation-error
 {
-	color: #E20000;
-	border: 1px solid #E20000;
+	color: #C72026;
+	border: 1px solid #C72026;
 }
 
 ul
@@ -121,7 +92,7 @@ p
 
 .p_active
 {
-	color: #444444;
+	color: #C72026;
 	font-weight: bold;
 }
 
@@ -131,7 +102,7 @@ p
 	background-repeat : no-repeat;
 	background-size : contain; 
 	background-position : center center;
-    border: solid 1px #444444;
+    border: solid 1px #C72026;
 }
 
 .inactive
@@ -142,7 +113,7 @@ p
 
 .kw input, .le input
 {
-    position: relative;
+    position: absolute;
     z-index: -9999;
 }
 
@@ -157,8 +128,8 @@ p
 .kw span:hover, .le span:hover
 {
    
-    background-color: #444444;
-    border: solid 1px #444444;
+    background-color: #C72026;
+    border: solid 1px #C72026;
 }
 
 .slectOne

@@ -3,8 +3,6 @@
 	<link rel='stylesheet' type='text/css' href='../calc_css/calc###css-source###.css'>
 	<link rel='stylesheet' type='text/css' href='css/cegauto_ado###cegauto-ado-css-source###.css'>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="js/cegauto_ado.js"></script>
 </head>
 
 <body>
